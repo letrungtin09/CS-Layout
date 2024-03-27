@@ -2,3 +2,11 @@
   margin: 0;
   padding: 0;
 }
+@font-face{
+  font-family: 'MyFont';
+  src: url('/CS-Layout/fonts/Roboto-Regular.ttf');
+}
+body{
+  font-family: 'MyFont', sans-serif;
+  box-sizing: border-box;
+}
