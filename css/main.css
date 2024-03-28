@@ -12,6 +12,11 @@ body {
   box-sizing: border-box;
 }
 
+.section-padding {
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
 header {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.273);
@@ -82,4 +87,58 @@ header .container-hd .col-2 .menu-hd li #btn-menu img {
 .cover .container-cover img {
   width: 100%;
   height: 100%;
+}
+
+.bestPlace {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.bestPlace .bestPlace__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.bestPlace .bestPlace__places {
+  display: flex;
+  justify-content: space-between;
+}
+.bestPlace .bestPlace__places .bestPlace__places__item {
+  width: 320px;
+  height: 420px;
+  background-image: url(../../img/bestPlace-HaNoi.jpg);
+  background-position: -200px center;
+  background-size: cover;
+  border-radius: 10px;
+}
+.bestPlace .bestPlace__places .bestPlace__places__item .bestPlace__places__flex {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 30px;
+}
+.bestPlace .bestPlace__places .bestPlace__places__item .bestPlace__places__flex .bestPlace__places__text {
+  width: 250px;
+  height: 70px;
+  background-color: #4ccd99;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+.bestPlace .bestPlace__places .item--saiGon {
+  background-image: url(../../img/bestPlace-SaiGon.jpg);
+  background-position: -200px center;
+  background-size: cover;
+}
+.bestPlace .bestPlace__places .item--daNang {
+  background-image: url(../../img/bestPlace-DaNang.jpg);
+  background-position: -185px center;
+  background-size: cover;
+}
+.bestPlace .bestPlace__places .item--nhaTrang {
+  background-image: url(../../img/bestPlace-NhaTrang.jpg);
+  background-position: -200px center;
+  background-size: cover;
 }/*# sourceMappingURL=main.css.map */
