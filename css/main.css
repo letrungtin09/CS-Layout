@@ -91,13 +91,31 @@ header .container-hd .col-2 .menu-hd li #btn-menu img {
 
 .bestPlace {
   padding-top: 50px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 .bestPlace .bestPlace__text {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+.bestPlace .bestPlace__text .bestPlace__text__title h3 {
+  font-size: 26px;
+  font-weight: bold;
+}
+.bestPlace .bestPlace__text .bestPlace__text__title p {
+  margin-bottom: 0;
+}
+.bestPlace .bestPlace__text .bestPlace__text__btn .btn-showAll {
+  display: inline-block;
+  width: 150px;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #4ccd99;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
 }
 .bestPlace .bestPlace__places {
   display: flex;
@@ -110,6 +128,7 @@ header .container-hd .col-2 .menu-hd li #btn-menu img {
   background-position: -200px center;
   background-size: cover;
   border-radius: 10px;
+  text-decoration: none;
 }
 .bestPlace .bestPlace__places .bestPlace__places__item .bestPlace__places__flex {
   width: 100%;
@@ -120,12 +139,16 @@ header .container-hd .col-2 .menu-hd li #btn-menu img {
   padding-bottom: 30px;
 }
 .bestPlace .bestPlace__places .bestPlace__places__item .bestPlace__places__flex .bestPlace__places__text {
-  width: 250px;
+  width: 230px;
   height: 70px;
   background-color: #4ccd99;
   text-align: center;
   color: rgb(255, 255, 255);
   border-radius: 10px;
+}
+.bestPlace .bestPlace__places .bestPlace__places__item .bestPlace__places__flex .bestPlace__places__text .namePlace {
+  font-weight: bold;
+  font-size: 18px;
 }
 .bestPlace .bestPlace__places .item--saiGon {
   background-image: url(../../img/bestPlace-SaiGon.jpg);
@@ -141,4 +164,82 @@ header .container-hd .col-2 .menu-hd li #btn-menu img {
   background-image: url(../../img/bestPlace-NhaTrang.jpg);
   background-position: -200px center;
   background-size: cover;
+}
+
+.searchPlace {
+  height: 150px;
+  position: relative;
+}
+.searchPlace .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.searchPlace .searchPlace__flex {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.searchPlace .searchPlace__flex .searchPlace__content {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+}
+.searchPlace .searchPlace__flex .searchPlace__content .searchPlace__item {
+  width: 300px;
+  height: 90px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.searchPlace .searchPlace__flex .searchPlace__content .searchPlace__item .searchPlace__icon {
+  height: 40px;
+  display: flex;
+  align-items: start;
+  font-size: 30px;
+  margin-right: 15px;
+}
+.searchPlace .searchPlace__flex .searchPlace__content .searchPlace__item .searchPlace__text .searchPlace__text__title {
+  font-weight: bold;
+}
+.searchPlace .searchPlace__flex .searchPlace__content .searchPlace__item .searchPlace__text .searchPlace__text__detail {
+  font-size: 14px;
+  color: rgba(34, 34, 34, 0.7);
+}
+.searchPlace .searchPlace__flex .searchPlace__content .searchPlace__item::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 50px;
+  background-color: rgba(34, 34, 34, 0.3);
+  position: absolute;
+  right: 0;
+}
+.searchPlace .searchPlace__flex .searchPlace__content .searchPlace__guests::after {
+  width: 0;
+}
+.searchPlace .searchPlace__flex .searchPlace__content .searchPlace__btnSearch {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #4ccd99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchPlace .searchPlace__flex .searchPlace__content .searchPlace__btnSearch i {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
 }/*# sourceMappingURL=main.css.map */

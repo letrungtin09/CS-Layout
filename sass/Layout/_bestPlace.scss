@@ -1,11 +1,33 @@
 .bestPlace {
   padding-top: 50px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   .bestPlace__text {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    .bestPlace__text__title {
+      h3 {
+        font-size: 26px;
+        font-weight: bold;
+      }
+      p {
+        margin-bottom: 0;
+      }
+    }
+    .bestPlace__text__btn {
+      .btn-showAll {
+        display: inline-block;
+        width: 150px;
+        padding: 10px 0;
+        text-align: center;
+        background-color: $color-green-0;
+        color: $color-white-0;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 10px;
+      }
+    }
   }
   .bestPlace__places {
     display: flex;
@@ -17,6 +39,7 @@
       background-position: -200px center;
       background-size: cover;
       border-radius: 10px;
+      text-decoration: none;
       .bestPlace__places__flex {
         width: 100%;
         height: 100%;
@@ -25,12 +48,16 @@
         align-items: flex-end;
         padding-bottom: 30px;
         .bestPlace__places__text {
-          width: 250px;
+          width: 230px;
           height: 70px;
           background-color: $color-green-0;
           text-align: center;
           color: $color-white-0;
           border-radius: 10px;
+          .namePlace {
+            font-weight: bold;
+            font-size: 18px;
+          }
         }
       }
     }

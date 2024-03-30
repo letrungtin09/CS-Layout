@@ -49,11 +49,11 @@
                 <p>Tìm chỗ ở mới của bạn tại 63 tỉnh thành của Việt Nam.</p>
             </div>
             <div class="bestPlace__text__btn">
-                <button class="btn-showAll">Xem tất cả <i class="fa-solid fa-caret-right"></i></button>
+                <a href="#" class="btn-showAll">Xem tất cả <i class="fa-solid fa-caret-right"></i></a>
             </div>
         </div>
         <div class="bestPlace__places">
-            <div class="bestPlace__places__item">
+            <a href="#" class="bestPlace__places__item">
                 <div class="bestPlace__places__flex">
                     <div class="bestPlace__places__text d-flex justify-content-center align-items-center">
                         <div>
@@ -62,8 +62,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="bestPlace__places__item item--saiGon">
+            </a>
+            <a href="#" class="bestPlace__places__item item--saiGon">
                 <div class="bestPlace__places__flex">
                     <div class="bestPlace__places__text d-flex justify-content-center align-items-center">
                         <div>
@@ -72,8 +72,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="bestPlace__places__item item--daNang">
+            </a>
+            <a href="#" class="bestPlace__places__item item--daNang">
                 <div class="bestPlace__places__flex">
                     <div class="bestPlace__places__text d-flex justify-content-center align-items-center">
                         <div>
@@ -82,8 +82,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="bestPlace__places__item item--nhaTrang">
+            </a>
+            <a href="#" class="bestPlace__places__item item--nhaTrang">
                 <div class="bestPlace__places__flex">
                     <div class="bestPlace__places__text d-flex justify-content-center align-items-center">
                         <div>
@@ -92,13 +92,58 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
         </div>
     </section>
     <!-- SEARCH PLACE -->
-    <section class="searchPlace"></section>
+    <section class="searchPlace">
+        <div class="overlay"></div>
+        <div class="searchPlace__flex section-padding">
+            <div class="searchPlace__content">
+                <div class="searchPlace__item searchPlace__location">
+                    <div class="searchPlace__icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="searchPlace__text">
+                        <div class="searchPlace__text__title">Địa điểm</div>
+                        <div class="searchPlace__text__detail">Tìm kiếm điểm đến</div>
+                    </div>
+                </div>
+                <div class="searchPlace__item searchPlace__checkInDate">
+                    <div class="searchPlace__icon"><i class="fa-solid fa-calendar-check"></i></div>
+                    <div class="searchPlace__text">
+                        <div class="searchPlace__text__title">Nhận phòng</div>
+                        <div class="searchPlace__text__detail">Thêm ngày</div>
+                    </div>
+                </div>
+                <div class="searchPlace__item searchPlace__checkOutDate">
+                    <div class="searchPlace__icon"><i class="fa-solid fa-calendar-day"></i></div>
+                    <div class="searchPlace__text">
+                        <div class="searchPlace__text__title">Trả phòng</div>
+                        <div class="searchPlace__text__detail">Thêm ngày</div>
+                    </div>
+                </div>
+                <div class="searchPlace__item searchPlace__guests">
+                    <div class="searchPlace__icon"><i class="fa-solid fa-people-group"></i></div>
+                    <div class="searchPlace__text">
+                        <div class="searchPlace__text__title">Khách</div>
+                        <div class="searchPlace__text__detail">Thêm khách</div>
+                    </div>
+                </div>
+                <div class="searchPlace__btnSearch"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+        </div>
+    </section>
     <!-- FILTER -->
-    <section class="filter"></section>
+    <section class="filter">
+        <div class="line"></div>
+        <div class="filter__container">
+            <div class="filter__list">
+                <div class="filter__item">
+                    <div class="filter__icon"></div>
+                    <div class="filter__text"></div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- PLACES -->
     <section class="places"></section>
     <!-- FOOTER -->
