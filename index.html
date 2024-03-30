@@ -1,107 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cozy Stay</title>
     <!-- BS5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!-- FONT AWSOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <!-- MAIN CSS -->
-    <link rel="stylesheet" href="./css/main.css">
-</head>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
 
-<body>
-
+  <body>
     <!-- HEADER -->
     <header>
-        <div class="container-hd">
-            <div class="col col-1"><img class="logo-hd" src="./img/CozyStay.png" alt=""></div>
-            <div class="col col-2">
-                <ul class="menu-hd">
-                    <li><a href="#">Đặt chổ</a></li>
-                    <li><a href="#">Chổ ở tốt nhất</a></li>
-                    <li><a href="#">Bài viết</a></li>
-                    <li><span>Ngôn ngữ </span></li>
-                    <li>
-                        <div id="btn-menu">
-                            <span class="btn-menu-item-1"><img src="/CS-Layout/img/icon-user.png" alt=""></span>
-                            <span class="btn-menu-item-2"><img src="/CS-Layout/img/icon-menu.png" alt=""></span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+      <div class="container-hd">
+        <div class="col col-1">
+          <img class="logo-hd" src="./img/CozyStay.png" alt="" />
         </div>
+        <div class="col col-2">
+          <ul class="menu-hd">
+            <li><a href="#">Đặt chổ</a></li>
+            <li><a href="#">Chổ ở tốt nhất</a></li>
+            <li><a href="#">Bài viết</a></li>
+            <li><span>Ngôn ngữ </span></li>
+            <li>
+              <div id="btn-menu">
+                <span class="btn-menu-item-1"
+                  ><img src="/CS-Layout/img/icon-user.png" alt=""
+                /></span>
+                <span class="btn-menu-item-2"
+                  ><img src="/CS-Layout/img/icon-menu.png" alt=""
+                /></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <!-- COVER -->
     <section class="cover">
-        <div class="container-cover">
-            <div class="item-ct-cover">
-                <img src="/CS-Layout/img/bg-1.jpg" alt="">
-                <div class="content">
-                    <div class="name-hotel">Căn hộ cao cấp</div>
-                    <div class="price">15.000.000</div>
-                    <div class="local">Đà Nẵng</div>
-                    <div class="des">Căn hộ dịch vụ cao cấp tại thành phố biển Đà Nẵng tuyệt đẹp</div>
-                </div>
+      <div class="container-cover">
+        <div class="item-ct-cover">
+          <img src="/CS-Layout/img/bg-1.jpg" alt="" />
+          <div class="overlay"></div>
+          <div class="content">
+            <div class="name-hotel font-banner content-item">Căn hộ cao cấp</div>
+            <div class="local font-banner content-item">Tại <span>Đà Nẵng</span></div>
+            <div class="price font-banner content-item"><span>15.000.000</span>đ/đêm</div>
+
+            <div class="des content-item">
+              Chỗ của chúng tôi cung cấp hầu hết nhu cầu của bạn để có một thời
+              gian lưu trú thoải mái. Căn hộ của chúng tôi nằm ngay trung tâm An
+              Thượng. Tuy nhiên, là một con đường yên tĩnh và bạn là trung tâm
+              của mọi thứ. 
+            </div>
+            <div class="buttons content-item">
+              <button class="btn-item-1">Xem Thêm</button>
+              <button class="btn-item-2">Đặt Ngay</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Thumbnail -->
+      <div class="thumbnail">
+        <div class="item">
+            <img src="/CS-Layout/img/bg-2.jpg" alt="">
+            <div class="content">
+                <div class="title">Căn hộ Phú Quốc</div>
+                <div class="price">10.000.000</div>
             </div>
         </div>
+        <div class="item">
+            <img src="/CS-Layout/img/bg-2.jpg" alt="">
+            <div class="content">
+                <div class="title">Căn hộ Phú Quốc</div>
+                <div class="price">10.000.000</div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="/CS-Layout/img/bg-2.jpg" alt="">
+            <div class="content">
+                <div class="title">Căn hộ Phú Quốc</div>
+                <div class="price">10.000.000</div>
+            </div>
+        </div>
+        
+      </div>
     </section>
     <!-- BEST PLACE -->
     <section class="bestPlace section-padding">
-        <div class="bestPlace__text">
-            <div class="bestPlace__text__title">
-                <h3>Địa điểm dừng chân tiếp theo của bạn ở đâu ?</h3>
-                <p>Tìm chỗ ở mới của bạn tại 63 tỉnh thành của Việt Nam.</p>
-            </div>
-            <div class="bestPlace__text__btn">
-                <button class="btn-showAll">Xem tất cả <i class="fa-solid fa-caret-right"></i></button>
-            </div>
+      <div class="bestPlace__text">
+        <div class="bestPlace__text__title">
+          <h3>Địa điểm dừng chân tiếp theo của bạn ở đâu ?</h3>
+          <p>Tìm chỗ ở mới của bạn tại 63 tỉnh thành của Việt Nam.</p>
         </div>
-        <div class="bestPlace__places">
-            <div class="bestPlace__places__item">
-                <div class="bestPlace__places__flex">
-                    <div class="bestPlace__places__text d-flex justify-content-center align-items-center">
-                        <div>
-                            <div class="namePlace">Hà Nội</div>
-                            <div class="totalPlaces">53 địa điểm</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="bestPlace__places__item item--saiGon">
-                <div class="bestPlace__places__flex">
-                    <div class="bestPlace__places__text d-flex justify-content-center align-items-center">
-                        <div>
-                            <div class="namePlace">Sài Gòn</div>
-                            <div class="totalPlaces">53 địa điểm</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="bestPlace__places__item item--daNang">
-                <div class="bestPlace__places__flex">
-                    <div class="bestPlace__places__text d-flex justify-content-center align-items-center">
-                        <div>
-                            <div class="namePlace">Đà Nẵng</div>
-                            <div class="totalPlaces">53 địa điểm</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="bestPlace__places__item item--nhaTrang">
-                <div class="bestPlace__places__flex">
-                    <div class="bestPlace__places__text d-flex justify-content-center align-items-center">
-                        <div>
-                            <div class="namePlace">Nha Trang</div>
-                            <div class="totalPlaces">53 địa điểm</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="bestPlace__text__btn">
+          <button class="btn-showAll">
+            Xem tất cả <i class="fa-solid fa-caret-right"></i>
+          </button>
         </div>
+      </div>
+      <div class="bestPlace__places">
+        <div class="bestPlace__places__item">
+          <div class="bestPlace__places__flex">
+            <div
+              class="bestPlace__places__text d-flex justify-content-center align-items-center"
+            >
+              <div>
+                <div class="namePlace">Hà Nội</div>
+                <div class="totalPlaces">53 địa điểm</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bestPlace__places__item item--saiGon">
+          <div class="bestPlace__places__flex">
+            <div
+              class="bestPlace__places__text d-flex justify-content-center align-items-center"
+            >
+              <div>
+                <div class="namePlace">Sài Gòn</div>
+                <div class="totalPlaces">53 địa điểm</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bestPlace__places__item item--daNang">
+          <div class="bestPlace__places__flex">
+            <div
+              class="bestPlace__places__text d-flex justify-content-center align-items-center"
+            >
+              <div>
+                <div class="namePlace">Đà Nẵng</div>
+                <div class="totalPlaces">53 địa điểm</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bestPlace__places__item item--nhaTrang">
+          <div class="bestPlace__places__flex">
+            <div
+              class="bestPlace__places__text d-flex justify-content-center align-items-center"
+            >
+              <div>
+                <div class="namePlace">Nha Trang</div>
+                <div class="totalPlaces">53 địa điểm</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- SEARCH PLACE -->
     <section class="searchPlace"></section>
@@ -110,13 +166,9 @@
     <!-- PLACES -->
     <section class="places"></section>
     <!-- FOOTER -->
-    <footer>
-    </footer>
-
+    <footer></footer>
 
     <!-- BS5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
-
+  </body>
 </html>

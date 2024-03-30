@@ -7,6 +7,10 @@
   font-family: "MyFont";
   src: url("/CS-Layout/fonts/Roboto-Regular.ttf");
 }
+@font-face {
+  font-family: "FontBanner";
+  src: url("/CS-Layout/fonts/Oswald-VariableFont_wght.ttf");
+}
 body {
   font-family: "MyFont", sans-serif;
   box-sizing: border-box;
@@ -19,8 +23,9 @@ body {
 
 header {
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.273);
+  background-color: white;
   width: 100%;
+  z-index: 100;
 }
 header .container-hd {
   width: 90%;
@@ -50,25 +55,27 @@ header .container-hd .col-2 .menu-hd {
   align-items: center;
 }
 header .container-hd .col-2 .menu-hd li {
+  font-family: "FontBanner";
+  letter-spacing: 1px;
   list-style: none;
   font-size: 15px;
 }
 header .container-hd .col-2 .menu-hd li a {
   text-transform: uppercase;
-  color: white;
+  color: black;
   text-decoration: none;
   font-weight: bold;
 }
 header .container-hd .col-2 .menu-hd li span {
   text-transform: uppercase;
-  color: white;
+  color: black;
   font-weight: bold;
   cursor: pointer;
 }
 header .container-hd .col-2 .menu-hd li #btn-menu {
   width: 85px;
-  background-color: white;
   border-radius: 90px;
+  border: 2px solid black;
   text-align: center;
 }
 header .container-hd .col-2 .menu-hd li #btn-menu img {
@@ -78,16 +85,117 @@ header .container-hd .col-2 .menu-hd li #btn-menu img {
 }
 
 .cover {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
 }
-.cover .container-cover {
+.cover .container-cover .item-ct-cover {
+  position: absolute;
+  inset: 0 0 0 0;
+}
+.cover .container-cover .item-ct-cover img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
-.cover .container-cover img {
+.cover .container-cover .item-ct-cover .overlay {
+  position: absolute;
+  top: 0;
   width: 100%;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.cover .container-cover .item-ct-cover .content {
+  position: absolute;
+  width: 40%;
+  padding: 2%;
+  color: white;
+  top: 30%;
+  left: 5%;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 10px;
+  max-height: 433px;
+}
+.cover .container-cover .item-ct-cover .content .content-item {
+  padding: 5px 0;
+}
+.cover .container-cover .item-ct-cover .content .font-banner {
+  font-family: "FontBanner";
+  letter-spacing: 2px;
+}
+.cover .container-cover .item-ct-cover .content .name-hotel {
+  font-size: 2rem;
+}
+.cover .container-cover .item-ct-cover .content .local {
+  font-size: 1.2rem;
+  color: #4CCD99;
+}
+.cover .container-cover .item-ct-cover .content .des {
+  text-transform: initial;
+  font-weight: 100;
+  text-align: justify;
+  font-size: 15px;
+}
+.cover .container-cover .item-ct-cover .content .buttons {
+  width: 70%;
+  margin: 1% 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cover .container-cover .item-ct-cover .content .buttons button {
+  width: 150px;
+  background: white;
+  font-family: "FontBanner";
+  padding: 5px;
+  letter-spacing: 3px;
+  border: none;
+}
+.cover .container-cover .item-ct-cover .content .buttons .btn-item-2 {
+  background: none;
+  color: white;
+  border: 1px solid white;
+  margin-left: 2%;
+}
+.cover .container-cover .item-ct-cover .content .buttons .btn-item-2:hover {
+  background: black;
+  color: white;
+  border: 1px solid black;
+}
+.cover .thumbnail {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  bottom: 35px;
+  width: 35%;
+  right: 3%;
+}
+.cover .thumbnail .item {
+  position: relative;
+  width: 100%;
+  height: 225px;
+  margin: 0 1%;
+  color: white;
+  font-family: "FontBanner";
+}
+.cover .thumbnail .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.cover .thumbnail .item .content {
+  position: absolute;
+  bottom: 8%;
+  padding: 4% 7%;
+  background: white;
+  width: 100%;
+  color: black;
+}
+.cover .thumbnail .item .content .price {
+  font-size: 0.75rem;
 }
 
 .bestPlace {

@@ -1,7 +1,8 @@
 header{
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.273);
+    background-color: $white-color;
     width: 100%;
+    z-index: 100;
     .container-hd{
         width: 90%;
         margin: 0 5%;
@@ -28,24 +29,27 @@ header{
                 margin: 0;
                 align-items: center;
                 li{
+                    font-family: "FontBanner";
+                    letter-spacing: 1px;
                     list-style: none;
                     font-size: 15px;
                     a{
                         text-transform: uppercase;
-                        color: white;
+                        color: $black-color;
                         text-decoration: none;
                         font-weight: bold;
                     }
                     span{
                         text-transform: uppercase;
-                        color: white;
+                        color: $black-color;
                         font-weight: bold;
                         cursor: pointer;
                     }
                     #btn-menu{
                         width: 85px;
-                        background-color: white;
+                        // background-color: white;
                         border-radius: 90px;
+                        border: 2px solid $black-color;
                         text-align: center;
                         img{
                             width: 20px;
