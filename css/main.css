@@ -388,7 +388,7 @@ footer .footer-copyright .footer-social a i:hover {
 .bestPlace .bestPlace__places .bestPlace__places__item {
   width: 320px;
   height: 420px;
-  background-image: url(../../img/bestPlace-HaNoi.jpg);
+  background-image: url(/img/bestPlace-HaNoi.jpg);
   background-position: -200px center;
   background-size: cover;
   border-radius: 10px;
@@ -415,17 +415,17 @@ footer .footer-copyright .footer-social a i:hover {
   font-size: 18px;
 }
 .bestPlace .bestPlace__places .item--saiGon {
-  background-image: url(../../img/bestPlace-SaiGon.jpg);
+  background-image: url(/img/bestPlace-SaiGon.jpg);
   background-position: -200px center;
   background-size: cover;
 }
 .bestPlace .bestPlace__places .item--daNang {
-  background-image: url(../../img/bestPlace-DaNang.jpg);
+  background-image: url(/img/bestPlace-DaNang.jpg);
   background-position: -185px center;
   background-size: cover;
 }
 .bestPlace .bestPlace__places .item--nhaTrang {
-  background-image: url(../../img/bestPlace-NhaTrang.jpg);
+  background-image: url(/img/bestPlace-NhaTrang.jpg);
   background-position: -200px center;
   background-size: cover;
 }
