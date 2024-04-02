@@ -26,12 +26,19 @@
         text-decoration: none;
         font-weight: bold;
         border-radius: 10px;
+        transition: all 0.3s;
+        &:hover {
+          background-color: $color-green-2;
+        }
       }
     }
   }
   .bestPlace__places {
-    display: flex;
-    justify-content: space-between;
+    .row {
+      margin-left: 0;
+      margin-right: 0;
+      justify-content: space-between;
+    }
     .bestPlace__places__item {
       width: 320px;
       height: 420px;
@@ -54,10 +61,16 @@
           text-align: center;
           color: $color-white-0;
           border-radius: 10px;
+          transition: all 0.3s;
           .namePlace {
             font-weight: bold;
             font-size: 18px;
           }
+        }
+      }
+      &:hover {
+        .bestPlace__places__text {
+          background-color: $color-green-2;
         }
       }
     }

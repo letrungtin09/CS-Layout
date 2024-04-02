@@ -11,6 +11,14 @@
   font-family: "FontBanner";
   src: url("/CS-Layout/fonts/Oswald-VariableFont_wght.ttf");
 }
+@font-face {
+  font-family: "FontFilter";
+  src: url("/fonts/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: "FontDetailPlace";
+  src: url("/fonts/Roboto-Light.ttf");
+}
 body {
   font-family: "MyFont", sans-serif;
   box-sizing: border-box;
@@ -380,9 +388,14 @@ footer .footer-copyright .footer-social a i:hover {
   text-decoration: none;
   font-weight: bold;
   border-radius: 10px;
+  transition: all 0.3s;
 }
-.bestPlace .bestPlace__places {
-  display: flex;
+.bestPlace .bestPlace__text .bestPlace__text__btn .btn-showAll:hover {
+  background-color: #3fa97f;
+}
+.bestPlace .bestPlace__places .row {
+  margin-left: 0;
+  margin-right: 0;
   justify-content: space-between;
 }
 .bestPlace .bestPlace__places .bestPlace__places__item {
@@ -409,10 +422,14 @@ footer .footer-copyright .footer-social a i:hover {
   text-align: center;
   color: rgb(255, 255, 255);
   border-radius: 10px;
+  transition: all 0.3s;
 }
 .bestPlace .bestPlace__places .bestPlace__places__item .bestPlace__places__flex .bestPlace__places__text .namePlace {
   font-weight: bold;
   font-size: 18px;
+}
+.bestPlace .bestPlace__places .bestPlace__places__item:hover .bestPlace__places__text {
+  background-color: #3fa97f;
 }
 .bestPlace .bestPlace__places .item--saiGon {
   background-image: url(/img/bestPlace-SaiGon.jpg);
@@ -475,6 +492,9 @@ footer .footer-copyright .footer-social a i:hover {
   font-size: 30px;
   margin-right: 15px;
 }
+.searchPlace .searchPlace__flex .searchPlace__content .searchPlace__item .searchPlace__icon i {
+  transition: all 0.3s;
+}
 .searchPlace .searchPlace__flex .searchPlace__content .searchPlace__item .searchPlace__text .searchPlace__text__title {
   font-weight: bold;
 }
@@ -491,6 +511,12 @@ footer .footer-copyright .footer-social a i:hover {
   position: absolute;
   right: 0;
 }
+.searchPlace .searchPlace__flex .searchPlace__content .searchPlace__item:hover {
+  cursor: pointer;
+}
+.searchPlace .searchPlace__flex .searchPlace__content .searchPlace__item:hover i {
+  color: #4ccd99;
+}
 .searchPlace .searchPlace__flex .searchPlace__content .searchPlace__guests::after {
   width: 0;
 }
@@ -502,8 +528,253 @@ footer .footer-copyright .footer-social a i:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s;
+  cursor: pointer;
 }
 .searchPlace .searchPlace__flex .searchPlace__content .searchPlace__btnSearch i {
   font-size: 20px;
   color: rgb(255, 255, 255);
+}
+.searchPlace .searchPlace__flex .searchPlace__content .searchPlace__btnSearch:hover {
+  background-color: #3fa97f;
+}
+
+.filter {
+  margin-bottom: 30px;
+}
+.filter .line {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(150, 150, 150, 0.3);
+  margin-bottom: 20px;
+}
+.filter .filter__container {
+  display: flex;
+}
+.filter .filter__container .filter__slider {
+  width: 92%;
+  height: 60px;
+  position: relative;
+  overflow: hidden;
+}
+.filter .filter__container .filter__slider .filter__list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 15px;
+  transition: all 0.5s;
+}
+.filter .filter__container .filter__slider .filter__list .filter__item {
+  margin: 0 20px;
+  position: relative;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+.filter .filter__container .filter__slider .filter__list .filter__item .filter__icon {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.filter .filter__container .filter__slider .filter__list .filter__item .filter__icon i {
+  color: rgba(34, 34, 34, 0.7);
+  font-size: 18px;
+  transition: all 0.5s;
+}
+.filter .filter__container .filter__slider .filter__list .filter__item .filter__text {
+  font-family: "FontFilter", sans-serif;
+  font-size: 14px;
+  color: rgba(34, 34, 34, 0.7);
+  text-wrap: nowrap;
+  transition: all 0.5s;
+}
+.filter .filter__container .filter__slider .filter__list .filter__item::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 3px;
+  background-color: #4ccd99;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+.filter .filter__container .filter__slider .filter__list .filter__item:hover i {
+  color: rgb(34, 34, 34);
+}
+.filter .filter__container .filter__slider .filter__list .filter__item:hover .filter__text {
+  color: rgb(34, 34, 34);
+}
+.filter .filter__container .filter__slider .filter__list .filter__item:hover::after {
+  width: 100%;
+}
+.filter .filter__container .filter__slider .filter__list .filter__item.active i {
+  color: rgb(34, 34, 34);
+}
+.filter .filter__container .filter__slider .filter__list .filter__item.active .filter__text {
+  color: rgb(34, 34, 34);
+}
+.filter .filter__container .filter__slider .filter__list .filter__item.active::after {
+  width: 100%;
+}
+.filter .filter__container .filter__slider .filter__btnNextPrev {
+  height: 60px;
+}
+.filter .filter__container .filter__slider .filter__btnNextPrev button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(34, 34, 34, 0.3);
+  transition: all 0.3s;
+}
+.filter .filter__container .filter__slider .filter__btnNextPrev button:hover {
+  background-color: rgb(245, 245, 245);
+}
+.filter .filter__container .filter__slider .filter__btnNextPrev .next-container,
+.filter .filter__container .filter__slider .filter__btnNextPrev .prev-container {
+  height: 60px;
+  width: 70px;
+  padding-top: 12px;
+}
+.filter .filter__container .filter__slider .filter__btnNextPrev .next-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white 40px);
+}
+.filter .filter__container .filter__slider .filter__btnNextPrev .prev-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white 30px);
+}
+.filter .filter__container .filter__btnFilter {
+  width: 8%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.filter .filter__container .filter__btnFilter .btn-filter {
+  width: 90px;
+  height: 45px;
+  border-radius: 10px;
+  font-size: 14px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(34, 34, 34, 0.3);
+  font-family: "FontFilter", sans-serif;
+  transition: all 0.3s;
+}
+.filter .filter__container .filter__btnFilter .btn-filter i {
+  margin-right: 5px;
+}
+.filter .filter__container .filter__btnFilter .btn-filter:hover {
+  background-color: rgb(245, 245, 245);
+}
+
+.places {
+  margin-bottom: 30px;
+}
+.places .places__container .places__item {
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+.places .places__container .places__item .places__slider {
+  width: 320px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+.places .places__container .places__item .places__slider .places__list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  width: max-content;
+  transition: all 0.5s;
+}
+.places .places__container .places__item .places__slider .places__list .places__img img {
+  width: 320px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.places .places__container .places__item .places__slider .places__favourite {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.places .places__container .places__item .places__slider .places__favourite i {
+  font-size: 22px;
+  color: rgb(255, 255, 255);
+}
+.places .places__container .places__item .places__slider .places__favourite #heart-full {
+  display: none;
+}
+.places .places__container .places__item .places__slider .places__liked {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+.places .places__container .places__item .places__slider .places__liked span {
+  font-family: "FontFilter", sans-serif;
+  font-size: 14px;
+}
+.places .places__container .places__item .places__slider .places__btnNextPrev button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(34, 34, 34, 0.3);
+  transition: all 0.3s;
+}
+.places .places__container .places__item .places__slider .places__btnNextPrev button:hover {
+  background-color: rgb(245, 245, 245);
+}
+.places .places__container .places__item .places__slider .places__btnNextPrev .btn-prev {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+}
+.places .places__container .places__item .places__slider .places__btnNextPrev .btn-next {
+  position: absolute;
+  top: 50%;
+  right: 3%;
+}
+.places .places__container .places__item .places__detail {
+  margin-top: 10px;
+  padding: 0 5px;
+  font-family: "FontDetailPlace", sans-serif;
+}
+.places .places__container .places__item .places__detail span {
+  font-size: 15px;
+}
+.places .places__container .places__item .places__detail .places__top {
+  display: flex;
+  justify-content: space-between;
+}
+.places .places__container .places__item .places__detail .places__top .name-place {
+  font-family: "MyFont", sans-serif;
+  font-weight: bold;
+}
+.places .places__container .places__item .places__detail .places__center {
+  margin: 3px 0;
+}
+.places .places__container .places__item .places__detail .places__center i {
+  margin-right: 3px;
+}
+.places .places__container .places__item .places__detail .places__center .area-place {
+  margin-right: 15px;
+}
+.places .places__container .places__item .places__detail .places__bottom .price-place {
+  font-family: "MyFont", sans-serif;
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */

@@ -10,6 +10,14 @@
   font-family: "FontBanner";
   src: url("/CS-Layout/fonts/Oswald-VariableFont_wght.ttf");
 }
+@font-face {
+  font-family: "FontFilter";
+  src: url("/fonts/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: "FontDetailPlace";
+  src: url("/fonts/Roboto-Light.ttf");
+}
 body {
   font-family: "MyFont", sans-serif;
   box-sizing: border-box;
