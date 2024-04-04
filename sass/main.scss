@@ -16,7 +16,13 @@
 @import "./Layout/places";
 
 //Components
+@import "./Components/formUser";
 @import "./Components/button";
 
 //Page
-@import "./Page/detailPlace"; //Theme
+@import "./Page/login";
+@import "./Page/signUp";
+@import "./Page/admin";
+@import "./Page/detailPlace";
+
+//Theme

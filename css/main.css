@@ -401,21 +401,30 @@ footer .footer-copyright .footer-social a i:hover {
 .bestPlace .bestPlace__places .bestPlace__places__item {
   width: 320px;
   height: 420px;
-  background-image: url(/img/bestPlace-HaNoi.jpg);
-  background-position: -200px center;
-  background-size: cover;
-  border-radius: 10px;
   text-decoration: none;
+  position: relative;
 }
-.bestPlace .bestPlace__places .bestPlace__places__item .bestPlace__places__flex {
+.bestPlace .bestPlace__places .bestPlace__places__item .bestPlace__places__img {
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  padding-bottom: 30px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.bestPlace .bestPlace__places .bestPlace__places__item .bestPlace__places__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+.bestPlace .bestPlace__places .bestPlace__places__item .bestPlace__places__img .img-center {
+  object-position: 70%;
 }
 .bestPlace .bestPlace__places .bestPlace__places__item .bestPlace__places__flex .bestPlace__places__text {
+  position: absolute;
+  top: 83%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 230px;
   height: 70px;
   background-color: #4ccd99;
@@ -431,20 +440,8 @@ footer .footer-copyright .footer-social a i:hover {
 .bestPlace .bestPlace__places .bestPlace__places__item:hover .bestPlace__places__text {
   background-color: #3fa97f;
 }
-.bestPlace .bestPlace__places .item--saiGon {
-  background-image: url(/img/bestPlace-SaiGon.jpg);
-  background-position: -200px center;
-  background-size: cover;
-}
-.bestPlace .bestPlace__places .item--daNang {
-  background-image: url(/img/bestPlace-DaNang.jpg);
-  background-position: -185px center;
-  background-size: cover;
-}
-.bestPlace .bestPlace__places .item--nhaTrang {
-  background-image: url(/img/bestPlace-NhaTrang.jpg);
-  background-position: -200px center;
-  background-size: cover;
+.bestPlace .bestPlace__places .bestPlace__places__item:hover .bestPlace__places__img img {
+  transform: scale(1.1);
 }
 
 .searchPlace {
@@ -777,4 +774,138 @@ footer .footer-copyright .footer-social a i:hover {
 .places .places__container .places__item .places__detail .places__bottom .price-place {
   font-family: "MyFont", sans-serif;
   font-weight: bold;
+}
+
+.form-gadgets {
+  background-color: #f7f7f7;
+  padding: 100px 0 30px;
+}
+.form-gadgets .form-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.form-gadgets .form-container .form-user {
+  width: 390px;
+  border-radius: 5px;
+  border: 1px solid #999;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  box-shadow: 0 0 5px 0 #e3e3e3;
+}
+.form-gadgets .form-container .form-user label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.form-gadgets .form-container .form-user input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #999;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.form-gadgets .form-container .form-user input:focus {
+  outline: none;
+  border: 1px solid #18a0c6;
+  box-shadow: 0 0 0 3px rgba(24, 160, 198, 0.3);
+}
+.form-gadgets .form-container .form-user input::placeholder {
+  color: #999;
+  font-size: 14px;
+}
+
+.login .login__form form .login__content {
+  margin-bottom: 5px;
+}
+.login .login__form form .login__content input[type=email] {
+  margin-bottom: 15px;
+}
+.login .login__form form .login__save {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.login .login__form form .login__save label {
+  font-weight: 400;
+}
+.login .login__form form .login__save input[type=checkbox] {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+.login .login__form form .login__save input[type=checkbox]:focus {
+  box-shadow: none;
+}
+.login .login__form form .login__btn {
+  margin-bottom: 5px;
+}
+.login .login__form form .login__forget {
+  padding: 10px 0;
+  border-bottom: 1px solid #e3e3e3;
+  text-align: center;
+}
+.login .login__form form .login__forget a {
+  text-decoration: none;
+  color: #18a0c6;
+  font-weight: 500;
+}
+.login .login__form form .login__register {
+  padding: 10px 0;
+  text-align: center;
+}
+.login .login__form form .login__register a {
+  text-decoration: none;
+  color: #18a0c6;
+  font-weight: 500;
+}
+.login .login__form form .login__social a {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  padding: 7px 0;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.login .login__form form .login__social .login__facebook a {
+  border: 1px solid #3b5998;
+  border-radius: 50px;
+  margin: 5px 0 10px;
+  color: #3b5998;
+  transition: 0.3s;
+}
+.login .login__form form .login__social .login__facebook a:hover {
+  background-color: #3b5998;
+  color: rgb(255, 255, 255);
+}
+.login .login__form form .login__social .login__google a {
+  border: 1px solid #dd4c3b;
+  border-radius: 50px;
+  color: #dd4c3b;
+  transition: 0.3s;
+}
+.login .login__form form .login__social .login__google a:hover {
+  background-color: #dd4c3b;
+  color: rgb(255, 255, 255);
+}
+
+.register .register__form a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #18a0c6;
+}
+.register .register__form .register__btn {
+  margin-top: 10px;
+}
+.register .register__form .register__rule {
+  text-align: center;
+  margin-top: 10px;
+  padding: 0 20px 10px;
+  border-bottom: 1px solid #e3e3e3;
+}
+.register .register__form .register__login {
+  margin-top: 10px;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
