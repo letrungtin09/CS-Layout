@@ -276,6 +276,10 @@ footer .footer-copyright .footer-social a i:hover {
 }
 .cover .container-cover .item-ct-cover .content .content-item {
   padding: 5px 0;
+  transform: translateY(5px);
+  filter: blur(20px);
+  opacity: 0;
+  animation: showContent 0.5s 1s linear 1 forwards;
 }
 .cover .container-cover .item-ct-cover .content .font-banner {
   font-family: "FontBanner";
@@ -283,22 +287,26 @@ footer .footer-copyright .footer-social a i:hover {
 }
 .cover .container-cover .item-ct-cover .content .name-hotel {
   font-size: 2rem;
+  animation-delay: 1.2s;
 }
 .cover .container-cover .item-ct-cover .content .local {
   font-size: 1.2rem;
   color: #4CCD99;
+  animation-delay: 1.4s;
 }
 .cover .container-cover .item-ct-cover .content .des {
   text-transform: initial;
   font-weight: 100;
   text-align: justify;
   font-size: 15px;
+  animation-delay: 1.6s;
 }
 .cover .container-cover .item-ct-cover .content .buttons {
   width: 70%;
   margin: 1% 0;
   display: flex;
   flex-wrap: wrap;
+  animation-delay: 1.8s;
 }
 .cover .container-cover .item-ct-cover .content .buttons button {
   width: 150px;
@@ -352,7 +360,48 @@ footer .footer-copyright .footer-social a i:hover {
 .cover .thumbnail .item .content .price {
   font-size: 0.75rem;
 }
+.cover .arrows {
+  position: absolute;
+  top: 80%;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  right: 55%;
+  filter: blur(20px);
+  opacity: 0;
+  animation: showButton 0.5s 1s linear 1 forwards;
+}
+.cover .arrows button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  color: white;
+  background: rgba(238, 238, 238, 0.2666666667);
+  font-size: large;
+  font-weight: bold;
+  border-radius: 50%;
+  font-family: monospace;
+  transition: 0.5s;
+}
+.cover .arrows button:hover {
+  background: white;
+  color: black;
+}
 
+@keyframes showContent {
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
+@keyframes showButton {
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
 .bestPlace {
   padding-top: 50px;
   padding-bottom: 20px;
