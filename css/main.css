@@ -287,26 +287,26 @@ footer .footer-copyright .footer-social a i:hover {
 }
 .cover .container-cover .item-ct-cover .content .name-hotel {
   font-size: 2rem;
-  animation-delay: 1.2s;
+  animation-delay: 1s;
 }
 .cover .container-cover .item-ct-cover .content .local {
   font-size: 1.2rem;
   color: #4CCD99;
-  animation-delay: 1.4s;
+  animation-delay: 1.2s;
 }
 .cover .container-cover .item-ct-cover .content .des {
   text-transform: initial;
   font-weight: 100;
   text-align: justify;
   font-size: 15px;
-  animation-delay: 1.6s;
+  animation-delay: 1.4s;
 }
 .cover .container-cover .item-ct-cover .content .buttons {
   width: 70%;
   margin: 1% 0;
   display: flex;
   flex-wrap: wrap;
-  animation-delay: 1.8s;
+  animation-delay: 1.6s;
 }
 .cover .container-cover .item-ct-cover .content .buttons button {
   width: 150px;
@@ -327,19 +327,36 @@ footer .footer-copyright .footer-social a i:hover {
   color: white;
   border: 1px solid black;
 }
+.cover .container-cover .item-ct-cover:nth-child(1) {
+  z-index: 1;
+}
+.cover .container-cover .item-ct-cover:nth-child(1) img {
+  width: 150px;
+  height: 220px;
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  border-radius: 20px;
+  filter: blur(20px);
+  animation: showImage 0.8s linear 1 forwards;
+}
 .cover .thumbnail {
   position: absolute;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   bottom: 35px;
   width: 35%;
-  right: 3%;
+  right: 5%;
+  z-index: 2;
+  gap: 15px;
+  transform: translateX(170px);
+  animation: tranformThumbnail 0.5s linear 1 forwards;
 }
 .cover .thumbnail .item {
   position: relative;
-  width: 100%;
+  width: 170px;
   height: 225px;
-  margin: 0 1%;
+  overflow: hidden;
   color: white;
   font-family: "FontBanner";
 }
@@ -356,9 +373,17 @@ footer .footer-copyright .footer-social a i:hover {
   background: white;
   width: 100%;
   color: black;
+  transform: translateX(168px);
+  animation: transformCt 0.5s linear 1 forwards;
+  animation-delay: 0.3s;
 }
 .cover .thumbnail .item .content .price {
   font-size: 0.75rem;
+}
+.cover .thumbnail .item:nth-last-child(1) {
+  width: 0;
+  overflow: hidden;
+  animation: showThumbnail 0.5s linear 1 forwards;
 }
 .cover .arrows {
   position: absolute;
@@ -371,6 +396,7 @@ footer .footer-copyright .footer-social a i:hover {
   filter: blur(20px);
   opacity: 0;
   animation: showButton 0.5s 1s linear 1 forwards;
+  z-index: 2;
 }
 .cover .arrows button {
   width: 40px;
@@ -400,6 +426,31 @@ footer .footer-copyright .footer-social a i:hover {
   to {
     opacity: 1;
     filter: blur(0);
+  }
+}
+@keyframes showImage {
+  to {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    border-radius: 0;
+    filter: blur(0);
+  }
+}
+@keyframes showThumbnail {
+  to {
+    width: 170px;
+  }
+}
+@keyframes tranformThumbnail {
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes transformCt {
+  to {
+    transform: translateX(0);
   }
 }
 .bestPlace {
