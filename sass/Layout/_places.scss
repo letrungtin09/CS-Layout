@@ -1,0 +1,111 @@
+.places {
+  margin-bottom: 30px;
+  .places__container {
+    .places__item {
+      margin-bottom: 25px;
+      cursor: pointer;
+      .places__slider {
+        width: 320px;
+        height: 300px;
+        position: relative;
+        overflow: hidden;
+        .places__list {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          display: flex;
+          width: max-content;
+          transition: all 0.5s;
+          .places__img {
+            img {
+              width: 320px;
+              height: 100%;
+              object-fit: cover;
+              border-radius: 10px;
+            }
+          }
+        }
+        .places__favourite {
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          i {
+            font-size: 22px;
+            color: $color-white-0;
+          }
+          #heart-full {
+            display: none;
+          }
+        }
+        .places__liked {
+          position: absolute;
+          top: 15px;
+          left: 15px;
+          text-align: center;
+          background-color: $color-white-0;
+          padding: 5px 15px;
+          border-radius: 20px;
+          span {
+            font-family: "FontFilter", sans-serif;
+            font-size: 14px;
+          }
+        }
+        .places__btnNextPrev {
+          button {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: $color-white-0;
+            border: 1px solid $color-black-3;
+            transition: all 0.3s;
+            &:hover {
+              background-color: $color-white-1;
+            }
+          }
+          .btn-prev {
+            position: absolute;
+            top: 50%;
+            left: 2%;
+          }
+          .btn-next {
+            position: absolute;
+            top: 50%;
+            right: 3%;
+          }
+        }
+      }
+      .places__detail {
+        margin-top: 10px;
+        padding: 0 5px;
+        font-family: "FontDetailPlace", sans-serif;
+        span {
+          font-size: 15px;
+        }
+        .places__top {
+          display: flex;
+          justify-content: space-between;
+          .name-place {
+            font-family: "MyFont", sans-serif;
+            font-weight: bold;
+          }
+        }
+        .places__center {
+          margin: 3px 0;
+          i {
+            margin-right: 3px;
+          }
+          .area-place {
+            margin-right: 15px;
+          }
+        }
+        .places__bottom {
+          .price-place {
+            font-family: "MyFont", sans-serif;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

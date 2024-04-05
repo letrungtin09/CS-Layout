@@ -1,0 +1,39 @@
+.register {
+  .register__form {
+    a {
+      font-weight: bold;
+      text-decoration: none;
+      color: $color-green-0;
+      transition: 0.3s;
+      &:hover {
+        color: $color-green-2;
+      }
+    }
+    .register__btn {
+      margin-top: 10px;
+      button {
+        width: 100%;
+        padding: 7px 0;
+        border-radius: 50px;
+        border: none;
+        background-color: $color-green-0;
+        color: $color-white-0;
+        font-weight: bold;
+        transition: all 0.3s;
+        &:hover {
+          background-color: $color-green-2;
+        }
+      }
+    }
+    .register__rule {
+      text-align: center;
+      margin-top: 15px;
+      padding: 0 20px 10px;
+      border-bottom: 1px solid $color-gray-0;
+    }
+    .register__login {
+      margin-top: 10px;
+      text-align: center;
+    }
+  }
+}

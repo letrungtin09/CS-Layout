@@ -1,49 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cozy Stay</title>
     <!-- BS5 CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <!-- FONT AWSOME -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./css/main.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- HEADER -->
     <header>
-      <div class="container-hd">
-        <div class="col col-1">
-          <img class="logo-hd" src="./img/CozyStay.png" alt="" />
+        <div class="container-hd">
+            <div class="col col-1">
+                <img class="logo-hd" src="./img/CozyStay.png" alt="" />
+            </div>
+            <div class="col col-2">
+                <ul class="menu-hd">
+                    <li><a href="#">Đặt chổ</a></li>
+                    <li><a href="#">Chổ ở tốt nhất</a></li>
+                    <li><a href="#">Bài viết</a></li>
+                    <li><span>Ngôn ngữ </span></li>
+                    <li>
+                        <div id="btn-menu">
+                            <span class="btn-menu-item-1"><img src="/CS-Layout/img/icon-user.png" alt="" /></span>
+                            <span class="btn-menu-item-2"><img src="/CS-Layout/img/icon-menu.png" alt="" /></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="col col-2">
-          <ul class="menu-hd">
-            <li><a href="#">Đặt chổ</a></li>
-            <li><a href="#">Chổ ở tốt nhất</a></li>
-            <li><a href="#">Bài viết</a></li>
-            <li><span>Ngôn ngữ </span></li>
-            <li>
-              <div id="btn-menu">
-                <span class="btn-menu-item-1"
-                  ><img src="/CS-Layout/img/icon-user.png" alt=""
-                /></span>
-                <span class="btn-menu-item-2"
-                  ><img src="/CS-Layout/img/icon-menu.png" alt=""
-                /></span>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
     </header>
     <!-- COVER -->
     <section class="cover">
@@ -133,67 +124,71 @@
     </section>
     <!-- BEST PLACE -->
     <section class="bestPlace section-padding">
-      <div class="bestPlace__text">
-        <div class="bestPlace__text__title">
-          <h3>Địa điểm dừng chân tiếp theo của bạn ở đâu ?</h3>
-          <p>Tìm chỗ ở mới của bạn tại 63 tỉnh thành của Việt Nam.</p>
+        <div class="bestPlace__text">
+            <div class="bestPlace__text__title">
+                <h3>Địa điểm dừng chân tiếp theo của bạn ở đâu ?</h3>
+                <p>Tìm chỗ ở mới của bạn tại 63 tỉnh thành của Việt Nam.</p>
+            </div>
+            <div class="bestPlace__text__btn">
+                <a href="#" class="btn-showAll">Xem tất cả <i class="fa-solid fa-caret-right"></i></a>
+            </div>
         </div>
-        <div class="bestPlace__text__btn">
-          <a href="#" class="btn-showAll"
-            >Xem tất cả <i class="fa-solid fa-caret-right"></i
-          ></a>
+        <div class="bestPlace__places">
+            <div class="row">
+                <div class="bestPlace__places__item col-3">
+                    <div class="bestPlace__places__img">
+                        <img class="img-center" src="/img/bestPlace-HaNoi.jpg" alt="">
+                    </div>
+                    <div class="bestPlace__places__flex">
+                        <div class="bestPlace__places__text d-flex justify-content-center align-items-center">
+                            <div>
+                                <div class="namePlace">Hà Nội</div>
+                                <div class="totalPlaces">53 địa điểm</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bestPlace__places__item col-3">
+                    <div class="bestPlace__places__img">
+                        <img src="/img/bestPlace-SaiGon.jpg" alt="">
+                    </div>
+                    <div class="bestPlace__places__flex">
+                        <div class="bestPlace__places__text d-flex justify-content-center align-items-center">
+                            <div>
+                                <div class="namePlace">Sài Gòn</div>
+                                <div class="totalPlaces">53 địa điểm</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bestPlace__places__item col-3">
+                    <div class="bestPlace__places__img">
+                        <img class="img-center" src="/img/bestPlace-DaNang.jpg" alt="">
+                    </div>
+                    <div class="bestPlace__places__flex">
+                        <div class="bestPlace__places__text d-flex justify-content-center align-items-center">
+                            <div>
+                                <div class="namePlace">Đà Nẵng</div>
+                                <div class="totalPlaces">53 địa điểm</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bestPlace__places__item col-3">
+                    <div class="bestPlace__places__img">
+                        <img src="/img/bestPlace-NhaTrang.jpg" alt="">
+                    </div>
+                    <div class="bestPlace__places__flex">
+                        <div class="bestPlace__places__text d-flex justify-content-center align-items-center">
+                            <div>
+                                <div class="namePlace">Nha Trang</div>
+                                <div class="totalPlaces">53 địa điểm</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="bestPlace__places">
-        <a href="#" class="bestPlace__places__item">
-          <div class="bestPlace__places__flex">
-            <div
-              class="bestPlace__places__text d-flex justify-content-center align-items-center"
-            >
-              <div>
-                <div class="namePlace">Hà Nội</div>
-                <div class="totalPlaces">53 địa điểm</div>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="#" class="bestPlace__places__item item--saiGon">
-          <div class="bestPlace__places__flex">
-            <div
-              class="bestPlace__places__text d-flex justify-content-center align-items-center"
-            >
-              <div>
-                <div class="namePlace">Sài Gòn</div>
-                <div class="totalPlaces">53 địa điểm</div>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="#" class="bestPlace__places__item item--daNang">
-          <div class="bestPlace__places__flex">
-            <div
-              class="bestPlace__places__text d-flex justify-content-center align-items-center"
-            >
-              <div>
-                <div class="namePlace">Đà Nẵng</div>
-                <div class="totalPlaces">53 địa điểm</div>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="#" class="bestPlace__places__item item--nhaTrang">
-          <div class="bestPlace__places__flex">
-            <div
-              class="bestPlace__places__text d-flex justify-content-center align-items-center"
-            >
-              <div>
-                <div class="namePlace">Nha Trang</div>
-                <div class="totalPlaces">53 địa điểm</div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
     </section>
     <!-- SEARCH PLACE -->
     <section class="searchPlace">
@@ -244,169 +239,450 @@
     </section>
     <!-- FILTER -->
     <section class="filter">
-      <div class="line"></div>
-      <div class="filter__container">
-        <div class="filter__list">
-          <div class="filter__item">
-            <div class="filter__icon"></div>
-            <div class="filter__text"></div>
-          </div>
+        <div class="line"></div>
+        <div class="filter__container section-padding">
+            <div class="filter__slider">
+                <div class="filter__list">
+                    <div class="filter__item">
+                        <div class="filter__icon"><i class="fa fa-home"></i></div>
+                        <div class="filter__text">Nhà ở Boutique</div>
+                    </div>
+                    <div class="filter__item active">
+                        <div class="filter__icon"><i class="fa fa-home"></i></div>
+                        <div class="filter__text">Nhà ở Boutique</div>
+                    </div>
+                    <div class="filter__item">
+                        <div class="filter__icon"><i class="fa fa-home"></i></div>
+                        <div class="filter__text">Nhà ở Boutique</div>
+                    </div>
+                    <div class="filter__item">
+                        <div class="filter__icon"><i class="fa fa-home"></i></div>
+                        <div class="filter__text">Nhà ở Boutique</div>
+                    </div>
+                    <div class="filter__item">
+                        <div class="filter__icon"><i class="fa fa-home"></i></div>
+                        <div class="filter__text">Nhà ở Boutique</div>
+                    </div>
+                    <div class="filter__item">
+                        <div class="filter__icon"><i class="fa fa-home"></i></div>
+                        <div class="filter__text">Nhà ở Boutique</div>
+                    </div>
+                    <div class="filter__item">
+                        <div class="filter__icon"><i class="fa fa-home"></i></div>
+                        <div class="filter__text">Nhà ở Boutique</div>
+                    </div>
+                    <div class="filter__item">
+                        <div class="filter__icon"><i class="fa fa-home"></i></div>
+                        <div class="filter__text">Nhà ở Boutique</div>
+                    </div>
+                    <div class="filter__item">
+                        <div class="filter__icon"><i class="fa fa-home"></i></div>
+                        <div class="filter__text">Nhà ở Boutique</div>
+                    </div>
+                    <div class="filter__item">
+                        <div class="filter__icon"><i class="fa fa-home"></i></div>
+                        <div class="filter__text">Nhà ở Boutique</div>
+                    </div>
+                    <div class="filter__item">
+                        <div class="filter__icon"><i class="fa fa-home"></i></div>
+                        <div class="filter__text">Nhà ở Boutique</div>
+                    </div>
+                    <div class="filter__item">
+                        <div class="filter__icon"><i class="fa fa-home"></i></div>
+                        <div class="filter__text">Nhà ở Boutique</div>
+                    </div>
+                    <div class="filter__item">
+                        <div class="filter__icon"><i class="fa fa-home"></i></div>
+                        <div class="filter__text">Nhà ở Boutique</div>
+                    </div>
+                    <div class="filter__item">
+                        <div class="filter__icon"><i class="fa fa-home"></i></div>
+                        <div class="filter__text">Nhà ở Boutique</div>
+                    </div>
+                    <div class="filter__item">
+                        <div class="filter__icon"><i class="fa fa-home"></i></div>
+                        <div class="filter__text">Nhà ở Boutique</div>
+                    </div>
+                    <div class="filter__item">
+                        <div class="filter__icon"><i class="fa fa-home"></i></div>
+                        <div class="filter__text">Nhà ở Boutique</div>
+                    </div>
+                    <div class="filter__item">
+                        <div class="filter__icon"><i class="fa fa-home"></i></div>
+                        <div class="filter__text">Nhà ở Boutique</div>
+                    </div>
+                    <div class="filter__item">
+                        <div class="filter__icon"><i class="fa fa-home"></i></div>
+                        <div class="filter__text">Nhà ở Boutique</div>
+                    </div>
+                    <div class="filter__item">
+                        <div class="filter__icon"><i class="fa fa-home"></i></div>
+                        <div class="filter__text">Nhà ở Boutique</div>
+                    </div>
+                    <div class="filter__item">
+                        <div class="filter__icon"><i class="fa fa-home"></i></div>
+                        <div class="filter__text">Nhà ở Boutique</div>
+                    </div>
+                </div>
+
+                <div class="filter__btnNextPrev">
+                    <div class="prev-container">
+                        <button id="prev-filter" class="btn-prev"><i class="fa fa-angle-left"></i></button>
+                    </div>
+                    <div class="next-container">
+                        <button id="next-filter" class="btn-next"><i class="fa fa-angle-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="filter__btnFilter">
+                <button class="btn-filter"><i class="fa fa-filter"></i> Bộ lọc</button>
+            </div>
         </div>
       </div>
     </section>
     <!-- PLACES -->
-    <section class="places"></section>
+    <section class="places">
+        <div class="places__container section-padding">
+            <div class="row">
+                <div class="places__item col-3">
+                    <div class="places__slider">
+                        <div class="places__list">
+                            <div class="places__img img1">
+                                <img src="/img/img-places-1.webp" alt="">
+                            </div>
+                            <div class="places__img img1">
+                                <img src="/img/img-places-2.webp" alt="">
+                            </div>
+                            <div class="places__img img1">
+                                <img src="/img/img-places-3.webp" alt="">
+                            </div>
+                            <div class="places__img img1">
+                                <img src="/img/img-places-4.webp" alt="">
+                            </div>
+                            <div class="places__img img1">
+                                <img src="/img/img-places-5.webp" alt="">
+                            </div>
+                        </div>
+
+                        <div class="places__favourite">
+                            <i class="fa-regular fa-heart"></i>
+                            <i id="heart-full" class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <div class="places__liked">
+                            <span>Được khách yêu thích</span>
+                        </div>
+
+                        <div class="places__btnNextPrev">
+                            <button class="btn-prev" id="prev" onclick="prevImg('img1')"><i
+                                    class="fa fa-angle-left"></i></button>
+                            <button class="btn-next" id="next" onclick="nextImg('img1')"><i
+                                    class="fa fa-angle-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="places__detail">
+                        <div class="places__top">
+                            <span class="name-place">Villa ở An Bàng, Hội An</span>
+                            <span class="star-place"><i class="fa fa-star"></i> <span>4.98</span></span>
+                        </div>
+                        <div class="places__center">
+                            <span class="area-place"><i class="fa fa-chart-area"></i> 200m<sup>2</sup></span>
+                            <span class="bed-place"><i class="fa fa-bed"></i> 3 phòng ngủ</span>
+                        </div>
+                        <div class="places__bottom">
+                            <span><span class="price-place">1.500.000đ /</span> ngày</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="places__item col-3">
+                    <div class="places__slider">
+                        <div class="places__list">
+                            <div class="places__img">
+                                <img src="/img/img-places-1.webp" alt="">
+                            </div>
+                        </div>
+
+                        <div class="places__btnNextPrev">
+
+                        </div>
+                    </div>
+                    <div class="places__detail">
+                        <div class="places__top">
+                            <span class="name-place">Villa ở An Bàng, Hội An</span>
+                            <span class="star-place"><i class="fa fa-star"></i> <span>4.98</span></span>
+                        </div>
+                        <div class="places__center">
+                            <span class="area-place"><i class="fa fa-chart-area"></i> 200m<sup>2</sup></span>
+                            <span class="bed-place"><i class="fa fa-bed"></i> 3 phòng ngủ</span>
+                        </div>
+                        <div class="places__bottom">
+                            <span><span class="price-place">1.500.000đ /</span> ngày</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="places__item col-3">
+                    <div class="places__slider">
+                        <div class="places__list">
+                            <div class="places__img">
+                                <img src="/img/img-places-1.webp" alt="">
+                            </div>
+                        </div>
+
+                        <div class="places__btnNextPrev">
+
+                        </div>
+                    </div>
+                    <div class="places__detail">
+                        <div class="places__top">
+                            <span class="name-place">Villa ở An Bàng, Hội An</span>
+                            <span class="star-place"><i class="fa fa-star"></i> <span>4.98</span></span>
+                        </div>
+                        <div class="places__center">
+                            <span class="area-place"><i class="fa fa-chart-area"></i> 200m<sup>2</sup></span>
+                            <span class="bed-place"><i class="fa fa-bed"></i> 3 phòng ngủ</span>
+                        </div>
+                        <div class="places__bottom">
+                            <span><span class="price-place">1.500.000đ /</span> ngày</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="places__item col-3">
+                    <div class="places__slider">
+                        <div class="places__list">
+                            <div class="places__img">
+                                <img src="/img/img-places-1.webp" alt="">
+                            </div>
+                        </div>
+
+                        <div class="places__btnNextPrev">
+
+                        </div>
+                    </div>
+                    <div class="places__detail">
+                        <div class="places__top">
+                            <span class="name-place">Villa ở An Bàng, Hội An</span>
+                            <span class="star-place"><i class="fa fa-star"></i> <span>4.98</span></span>
+                        </div>
+                        <div class="places__center">
+                            <span class="area-place"><i class="fa fa-chart-area"></i> 200m<sup>2</sup></span>
+                            <span class="bed-place"><i class="fa fa-bed"></i> 3 phòng ngủ</span>
+                        </div>
+                        <div class="places__bottom">
+                            <span><span class="price-place">1.500.000đ /</span> ngày</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="places__item col-3">
+                    <div class="places__slider">
+                        <div class="places__list">
+                            <div class="places__img">
+                                <img src="/img/img-places-1.webp" alt="">
+                            </div>
+                        </div>
+
+                        <div class="places__btnNextPrev">
+
+                        </div>
+                    </div>
+                    <div class="places__detail">
+                        <div class="places__top">
+                            <span class="name-place">Villa ở An Bàng, Hội An</span>
+                            <span class="star-place"><i class="fa fa-star"></i> <span>4.98</span></span>
+                        </div>
+                        <div class="places__center">
+                            <span class="area-place"><i class="fa fa-chart-area"></i> 200m<sup>2</sup></span>
+                            <span class="bed-place"><i class="fa fa-bed"></i> 3 phòng ngủ</span>
+                        </div>
+                        <div class="places__bottom">
+                            <span><span class="price-place">1.500.000đ /</span> ngày</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="places__item col-3">
+                    <div class="places__slider">
+                        <div class="places__list">
+                            <div class="places__img">
+                                <img src="/img/img-places-1.webp" alt="">
+                            </div>
+                        </div>
+
+                        <div class="places__btnNextPrev">
+
+                        </div>
+                    </div>
+                    <div class="places__detail">
+                        <div class="places__top">
+                            <span class="name-place">Villa ở An Bàng, Hội An</span>
+                            <span class="star-place"><i class="fa fa-star"></i> <span>4.98</span></span>
+                        </div>
+                        <div class="places__center">
+                            <span class="area-place"><i class="fa fa-chart-area"></i> 200m<sup>2</sup></span>
+                            <span class="bed-place"><i class="fa fa-bed"></i> 3 phòng ngủ</span>
+                        </div>
+                        <div class="places__bottom">
+                            <span><span class="price-place">1.500.000đ /</span> ngày</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="places__item col-3">
+                    <div class="places__slider">
+                        <div class="places__list">
+                            <div class="places__img">
+                                <img src="/img/img-places-1.webp" alt="">
+                            </div>
+                        </div>
+
+                        <div class="places__btnNextPrev">
+
+                        </div>
+                    </div>
+                    <div class="places__detail">
+                        <div class="places__top">
+                            <span class="name-place">Villa ở An Bàng, Hội An</span>
+                            <span class="star-place"><i class="fa fa-star"></i> <span>4.98</span></span>
+                        </div>
+                        <div class="places__center">
+                            <span class="area-place"><i class="fa fa-chart-area"></i> 200m<sup>2</sup></span>
+                            <span class="bed-place"><i class="fa fa-bed"></i> 3 phòng ngủ</span>
+                        </div>
+                        <div class="places__bottom">
+                            <span><span class="price-place">1.500.000đ /</span> ngày</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="places__item col-3">
+                    <div class="places__slider">
+                        <div class="places__list">
+                            <div class="places__img">
+                                <img src="/img/img-places-1.webp" alt="">
+                            </div>
+                        </div>
+
+                        <div class="places__btnNextPrev">
+
+                        </div>
+                    </div>
+                    <div class="places__detail">
+                        <div class="places__top">
+                            <span class="name-place">Villa ở An Bàng, Hội An</span>
+                            <span class="star-place"><i class="fa fa-star"></i> <span>4.98</span></span>
+                        </div>
+                        <div class="places__center">
+                            <span class="area-place"><i class="fa fa-chart-area"></i> 200m<sup>2</sup></span>
+                            <span class="bed-place"><i class="fa fa-bed"></i> 3 phòng ngủ</span>
+                        </div>
+                        <div class="places__bottom">
+                            <span><span class="price-place">1.500.000đ /</span> ngày</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- FOOTER -->
     <footer></footer>
     <footer>
-      <div class="line"></div>
-      <div class="footer-top section-padding">
-        <div class="row">
-          <div class="col-md-3 col-sm-6">
-            <div class="single-footer-widget">
-              <div class="footer-logo">
-                <a href="index.html"><img src="./img/CozyStay.png" alt="" /></a>
-              </div>
-              <p>
-                Ased do eiusm tempor incidi ut labore et dolore magnaian aliqua.
-                Ut enim ad minim veniam.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="single-footer-widget">
-              <h2>Liên Hệ</h2>
-              <ul class="list-unstyled">
-                <li>
-                  <i class="fa-solid fa-location-dot"></i
-                  ><a
-                    href="https://maps.app.goo.gl/teW311aW33z8Qynm7"
-                    target="_blank"
-                  >
-                    Khu Công viên phần mềm Quang Trung, P. Tân Chánh Hiệp, Q.12,
-                    TP.HCM, Việt Nam</a
-                  >
-                </li>
-                <li>
-                  <i class="fa-solid fa-phone"></i
-                  ><a href="tel:0123456789"> 0123456789</a>
-                </li>
-                <li>
-                  <i class="fa-solid fa-envelope"></i
-                  ><a href="mailto:CozyStay@gmail.com"> CozyStay@gmail.com</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-3 col-xs-12">
-            <div class="single-footer-widget">
-              <h2>Lựa Chọn</h2>
-              <div class="row">
-                <div class="col-md-7 col-xs-6">
-                  <ul class="list-unstyled">
-                    <li>
-                      <a href="#"
-                        ><i
-                          id="icon-footer"
-                          class="fa-solid fa-arrow-right"
-                        ></i>
-                        Bài viết</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i
-                          id="icon-footer"
-                          class="fa-solid fa-arrow-right"
-                        ></i>
-                        Cho thuê chỗ ở</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i
-                          id="icon-footer"
-                          class="fa-solid fa-arrow-right"
-                        ></i>
-                        Đặt phòng</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i
-                          id="icon-footer"
-                          class="fa-solid fa-arrow-right"
-                        ></i>
-                        Điều khoản và điều kiện</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i
-                          id="icon-footer"
-                          class="fa-solid fa-arrow-right"
-                        ></i>
-                        Chính sách bảo mật</a
-                      >
-                    </li>
-                  </ul>
+        <div class="line"></div>
+        <div class="footer-top section-padding">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-footer-widget">
+                        <div class="footer-logo">
+                            <a href="index.html"><img src="./img/CozyStay.png" alt=""></a>
+                        </div>
+                        <p>
+                            Ased do eiusm tempor incidi ut labore et dolore magnaian aliqua. Ut enim ad minim veniam.
+                        </p>
+
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-offset-1 col-md-3 col-sm-6">
-            <div class="single-footer-widget">
-              <h2>Đăng ký</h2>
-              <div class="footer-newsletter">
-                <p>Đăng ký tư vấn ngay</p>
-              </div>
-              <div class="hm-foot-email">
-                <div class="foot-email-box">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Add Email"
-                  />
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h2>Liên Hệ</h2>
+                        <ul class="list-unstyled">
+                            <li><i class="fa-solid fa-location-dot"></i><a
+                                    href="https://maps.app.goo.gl/teW311aW33z8Qynm7" target="_blank"> Khu Công viên phần
+                                    mềm Quang Trung, P. Tân Chánh Hiệp, Q.12, TP.HCM, Việt Nam</a></li>
+                            <li><i class="fa-solid fa-phone"></i><a href="tel:0123456789"> 0123456789</a></li>
+                            <li><i class="fa-solid fa-envelope"></i><a href="mailto:CozyStay@gmail.com">
+                                    CozyStay@gmail.com</a></li>
+                        </ul>
+                    </div>
+
                 </div>
-                <!--/.foot-email-box-->
-                <div class="foot-email-subscribe">
-                  <span><i class="fa fa-arrow-right"></i></span>
+                <div class="col-md-3 col-xs-12">
+                    <div class="single-footer-widget">
+                        <h2>Lựa Chọn</h2>
+                        <div class="row">
+                            <div class="col-md-7 col-xs-6">
+                                <ul class="list-unstyled">
+                                    <li><a href="#"><i id="icon-footer" class="fa-solid fa-arrow-right"></i> Bài
+                                            viết</a></li>
+                                    <li><a href="#"><i id="icon-footer" class="fa-solid fa-arrow-right"></i> Cho thuê
+                                            chỗ ở</a></li>
+                                    <li><a href="#"><i id="icon-footer" class="fa-solid fa-arrow-right"></i> Đặt
+                                            phòng</a></li>
+                                    <li><a href="#"><i id="icon-footer" class="fa-solid fa-arrow-right"></i> Điều khoản
+                                            và điều kiện</a></li>
+                                    <li><a href="#"><i id="icon-footer" class="fa-solid fa-arrow-right"></i> Chính sách
+                                            bảo mật</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
-                <!--/.foot-email-icon-->
-              </div>
-              <!--/.hm-foot-email-->
+                <div class="col-md-offset-1 col-md-3 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h2>Đăng ký</h2>
+                        <div class="footer-newsletter">
+                            <p>
+                                Đăng ký tư vấn ngay
+                            </p>
+                        </div>
+                        <div class="hm-foot-email">
+                            <div class="foot-email-box">
+                                <input type="text" class="form-control" placeholder="Add Email">
+                            </div><!--/.foot-email-box-->
+                            <div class="foot-email-subscribe">
+                                <span><i class="fa fa-arrow-right"></i></span>
+                            </div><!--/.foot-email-icon-->
+                        </div><!--/.hm-foot-email-->
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="line"></div>
-      <div class="footer-copyright section-padding">
-        <div class="row">
-          <div class="col-sm-6">
-            <p>&copy; 2024 CozyStay, Inc.</p>
-            <ul>
-              <li>Quyền riêng tư</li>
-              <li>Điều khoản</li>
-              <li>Sơ đồ web</li>
-            </ul>
-          </div>
-          <div class="col-sm-6">
-            <div class="footer-social">
-              <a href="#"
-                ><i class="fa-solid fa-language"></i> Tiếng Việt (VN)</a
-              >
-              <a href="#"><i class="fa-solid fa-dollar-sign"></i> USD</a>
-              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <div class="line"></div>
+        <div class="footer-copyright section-padding">
+            <div class="row">
+                <div class="col-sm-6">
+                    <p>&copy; 2024 CozyStay, Inc.</p>
+                    <ul>
+                        <li>Quyền riêng tư</li>
+                        <li>Điều khoản</li>
+                        <li>Sơ đồ web</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <div class="footer-social">
+                        <a href="#"><i class="fa-solid fa-language"></i> Tiếng Việt (VN)</a>
+                        <a href="#"><i class="fa-solid fa-dollar-sign"></i> USD</a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <!--/.footer-copyright-->
+        </div><!--/.footer-copyright-->
+
     </footer>
 
     <!-- BS5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+
+    <script src="/js/sliderFilter.js"></script>
+    <script src="/js/sliderPlace.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+
 </html>
