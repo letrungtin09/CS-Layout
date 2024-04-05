@@ -43,6 +43,9 @@
           align-items: start;
           font-size: 30px;
           margin-right: 15px;
+          i {
+            transition: all 0.3s;
+          }
         }
         .searchPlace__text {
           .searchPlace__text__title {
@@ -62,6 +65,12 @@
           position: absolute;
           right: 0;
         }
+        &:hover {
+          cursor: pointer;
+          i {
+            color: $color-green-0;
+          }
+        }
       }
       .searchPlace__guests {
         &::after {
@@ -76,9 +85,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: all 0.3s;
+        cursor: pointer;
         i {
           font-size: 20px;
           color: $color-white-0;
+        }
+        &:hover {
+          background-color: $color-green-2;
         }
       }
     }

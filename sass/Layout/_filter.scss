@@ -1,0 +1,147 @@
+.filter {
+  margin-bottom: 30px;
+  .line {
+    width: 100%;
+    height: 1px;
+    background-color: $color-black-4;
+    margin-bottom: 20px;
+  }
+  .filter__container {
+    display: flex;
+    .filter__slider {
+      width: 92%;
+      height: 60px;
+      position: relative;
+      overflow: hidden;
+      .filter__list {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0 15px;
+        transition: all 0.5s;
+        .filter__item {
+          margin: 0 20px;
+          position: relative;
+          padding-bottom: 10px;
+          cursor: pointer;
+          .filter__icon {
+            text-align: center;
+            margin-bottom: 5px;
+            i {
+              color: $color-black-2;
+              font-size: 18px;
+              transition: all 0.5s;
+            }
+          }
+          .filter__text {
+            font-family: "FontFilter", sans-serif;
+            font-size: 14px;
+            color: $color-black-2;
+            text-wrap: nowrap;
+            transition: all 0.5s;
+          }
+          &::after {
+            content: "";
+            display: inline-block;
+            width: 0;
+            height: 3px;
+            background-color: $color-green-0;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: all 0.5s;
+          }
+          &:hover {
+            i {
+              color: $color-black-5;
+            }
+            .filter__text {
+              color: $color-black-5;
+            }
+            &::after {
+              width: 100%;
+            }
+          }
+          &.active {
+            i {
+              color: $color-black-5;
+            }
+            .filter__text {
+              color: $color-black-5;
+            }
+            &::after {
+              width: 100%;
+            }
+          }
+        }
+      }
+      .filter__btnNextPrev {
+        height: 60px;
+        button {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background-color: $color-white-0;
+          border: 1px solid $color-black-3;
+          transition: all 0.3s;
+          &:hover {
+            background-color: $color-white-1;
+          }
+        }
+        .next-container,
+        .prev-container {
+          height: 60px;
+          width: 70px;
+          padding-top: 12px;
+        }
+        .next-container {
+          position: absolute;
+          top: 0;
+          right: 0;
+          display: flex;
+          justify-content: flex-end;
+          background: linear-gradient(
+            to right,
+            rgb(255 255 255 / 0),
+            white 40px
+          );
+        }
+        .prev-container {
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: linear-gradient(
+            to left,
+            rgb(255 255 255 / 0),
+            white 30px
+          );
+        }
+      }
+    }
+    .filter__btnFilter {
+      width: 8%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      .btn-filter {
+        width: 90px;
+        height: 45px;
+        border-radius: 10px;
+        font-size: 14px;
+        background-color: $color-white-0;
+        border: 1px solid $color-black-3;
+        font-family: "FontFilter", sans-serif;
+        transition: all 0.3s;
+        i {
+          margin-right: 5px;
+        }
+        &:hover {
+          background-color: $color-white-1;
+        }
+      }
+    }
+  }
+}
