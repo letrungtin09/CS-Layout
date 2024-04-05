@@ -25,6 +25,19 @@
       }
       .login__btn {
         margin-bottom: 5px;
+        button {
+          width: 100%;
+          padding: 7px 0;
+          border-radius: 50px;
+          border: none;
+          background-color: $color-green-0;
+          color: $color-white-0;
+          font-weight: bold;
+          transition: all 0.3s;
+          &:hover {
+            background-color: $color-green-2;
+          }
+        }
       }
       .login__forget {
         padding: 10px 0;
@@ -32,8 +45,12 @@
         text-align: center;
         a {
           text-decoration: none;
-          color: $color-blue-0;
-          font-weight: 500;
+          color: $color-green-0;
+          font-weight: bold;
+          transition: 0.3s;
+          &:hover {
+            color: $color-green-2;
+          }
         }
       }
       .login__register {
@@ -41,8 +58,12 @@
         text-align: center;
         a {
           text-decoration: none;
-          color: $color-blue-0;
-          font-weight: 500;
+          color: $color-green-0;
+          font-weight: bold;
+          transition: 0.3s;
+          &:hover {
+            color: $color-green-2;
+          }
         }
       }
       .login__social {
