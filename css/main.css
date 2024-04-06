@@ -247,218 +247,241 @@ footer .footer-copyright .footer-social a i:hover {
   opacity: 0.7;
 }
 
-.cover {
-  width: 100vw;
+.cover .carousel_cv {
   height: 100vh;
+  width: 100%;
   overflow: hidden;
   position: relative;
-  z-index: 0;
+  font-family: "FontBanner";
 }
-.cover .container-cover .item-ct-cover {
+.cover .carousel_cv .list .item {
+  width: 100%;
+  height: 100%;
   position: absolute;
   inset: 0 0 0 0;
 }
-.cover .container-cover .item-ct-cover img {
+.cover .carousel_cv .list .item .overlay-cv {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1215686275);
+  position: absolute;
+}
+.cover .carousel_cv .list .item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.cover .container-cover .item-ct-cover .overlay {
+.cover .carousel_cv .list .item .content {
   position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  top: 45%;
+  width: 1140px;
+  max-width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-right: 30%;
+  box-sizing: border-box;
+  color: #fff;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2666666667);
 }
-.cover .container-cover .item-ct-cover .content {
-  position: absolute;
-  width: 40%;
-  padding: 2%;
-  color: white;
-  top: 30%;
-  left: 5%;
+.cover .carousel_cv .list .item .content .author {
   font-weight: bold;
-  text-transform: uppercase;
-  border-radius: 10px;
-  max-height: 433px;
+  letter-spacing: 10px;
 }
-.cover .container-cover .item-ct-cover .content .content-item {
-  padding: 5px 0;
-  transform: translateY(5px);
+.cover .carousel_cv .list .item .content .title,
+.cover .carousel_cv .list .item .content .topic {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.3em;
+}
+.cover .carousel_cv .list .item .content .title.topic,
+.cover .carousel_cv .list .item .content .topic.topic {
+  color: #4CCD99;
+  font-size: 1rem;
+}
+.cover .carousel_cv .list .item .content .buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 130px);
+  grid-template-rows: 40px;
+  gap: 5px;
+  margin-top: 20px;
+}
+.cover .carousel_cv .list .item .content .buttons button {
+  border: none;
+  background-color: #eee;
+  letter-spacing: 3px;
+  font-family: "FontBanner";
+  font-weight: 500;
+}
+.cover .carousel_cv .list .item .content .buttons button:nth-child(2) {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #eee;
+}
+.cover .carousel_cv .list:nth-child(1) {
+  z-index: 1;
+}
+.cover .carousel_cv .list:nth-child(1) .content .author,
+.cover .carousel_cv .list:nth-child(1) .content .title,
+.cover .carousel_cv .list:nth-child(1) .content .topic,
+.cover .carousel_cv .list:nth-child(1) .content .des,
+.cover .carousel_cv .list:nth-child(1) .content .buttons {
+  transform: translateY(50px);
   filter: blur(20px);
   opacity: 0;
   animation: showContent 0.5s 1s linear 1 forwards;
 }
-.cover .container-cover .item-ct-cover .content .font-banner {
-  font-family: "FontBanner";
-  letter-spacing: 2px;
+.cover .carousel_cv .list:nth-child(1) .content .title {
+  animation-delay: 1.2s !important;
 }
-.cover .container-cover .item-ct-cover .content .name-hotel {
-  font-size: 2rem;
-  animation-delay: 1s;
+.cover .carousel_cv .list:nth-child(1) .content .topic {
+  animation-delay: 1.4s !important;
 }
-.cover .container-cover .item-ct-cover .content .local {
-  font-size: 1.2rem;
-  color: #4CCD99;
-  animation-delay: 1.2s;
+.cover .carousel_cv .list:nth-child(1) .content .des {
+  animation-delay: 1.6s !important;
 }
-.cover .container-cover .item-ct-cover .content .des {
-  text-transform: initial;
-  font-weight: 100;
-  text-align: justify;
-  font-size: 15px;
-  animation-delay: 1.4s;
+.cover .carousel_cv .list:nth-child(1) .content .buttons {
+  animation-delay: 1.8s !important;
 }
-.cover .container-cover .item-ct-cover .content .buttons {
-  width: 70%;
-  margin: 1% 0;
-  display: flex;
-  flex-wrap: wrap;
-  animation-delay: 1.6s;
+.cover .carousel_cv .list:nth-child(2) {
+  z-index: 2;
 }
-.cover .container-cover .item-ct-cover .content .buttons button {
-  width: 150px;
-  background: white;
-  font-family: "FontBanner";
-  padding: 5px;
-  letter-spacing: 3px;
-  border: none;
+.cover .carousel_cv .list:nth-child(2) img {
+  z-index: 100;
 }
-.cover .container-cover .item-ct-cover .content .buttons .btn-item-2 {
-  background: none;
-  color: white;
-  border: 1px solid white;
-  margin-left: 2%;
-}
-.cover .container-cover .item-ct-cover .content .buttons .btn-item-2:hover {
-  background: black;
-  color: white;
-  border: 1px solid black;
-}
-.cover .container-cover .item-ct-cover:nth-child(1) {
-  z-index: 1;
-}
-.cover .container-cover .item-ct-cover:nth-child(1) img {
-  width: 150px;
-  height: 220px;
-  position: absolute;
-  left: 50%;
-  bottom: 50px;
-  border-radius: 20px;
-  filter: blur(20px);
-  animation: showImage 0.8s linear 1 forwards;
+.cover .carousel_cv .list:nth-child(2) .content .author,
+.cover .carousel_cv .list:nth-child(2) .content .title,
+.cover .carousel_cv .list:nth-child(2) .content .topic,
+.cover .carousel_cv .list:nth-child(2) .content .des,
+.cover .carousel_cv .list:nth-child(2) .content .buttons {
+  animation: contentOut 1.5s linear 1 forwards !important;
 }
 .cover .thumbnail {
   position: absolute;
+  bottom: 50px;
+  left: 50%;
+  width: max-content;
+  z-index: 100;
   display: flex;
-  justify-content: start;
-  bottom: 35px;
-  width: 35%;
-  right: 5%;
-  z-index: 2;
-  gap: 15px;
-  transform: translateX(170px);
-  animation: tranformThumbnail 0.5s linear 1 forwards;
+  gap: 20px;
 }
 .cover .thumbnail .item {
+  width: 150px;
+  height: 220px;
+  flex-shrink: 0;
   position: relative;
-  width: 170px;
-  height: 225px;
-  overflow: hidden;
-  color: white;
-  font-family: "FontBanner";
 }
 .cover .thumbnail .item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 16px;
+  border-radius: 20px;
 }
 .cover .thumbnail .item .content {
+  color: #fff;
   position: absolute;
-  bottom: 8%;
-  padding: 4% 7%;
-  background: white;
-  width: 100%;
-  color: black;
-  transform: translateX(168px);
-  animation: transformCt 0.5s linear 1 forwards;
-  animation-delay: 0.3s;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
 }
-.cover .thumbnail .item .content .price {
-  font-size: 0.75rem;
+.cover .thumbnail .item .content .title {
+  font-weight: 500;
 }
-.cover .thumbnail .item:nth-last-child(1) {
-  width: 0;
-  overflow: hidden;
-  animation: showThumbnail 0.5s linear 1 forwards;
+.cover .thumbnail .item .content .description {
+  font-weight: 300;
 }
 .cover .arrows {
   position: absolute;
   top: 80%;
+  right: 52%;
+  z-index: 100;
   width: 300px;
+  max-width: 30%;
   display: flex;
-  align-items: center;
   gap: 10px;
-  right: 55%;
-  filter: blur(20px);
-  opacity: 0;
-  animation: showButton 0.5s 1s linear 1 forwards;
-  z-index: 2;
+  align-items: center;
 }
 .cover .arrows button {
   width: 40px;
   height: 40px;
-  border: none;
-  color: white;
-  background: rgba(238, 238, 238, 0.2666666667);
-  font-size: large;
-  font-weight: bold;
   border-radius: 50%;
-  font-family: monospace;
+  background-color: rgba(238, 238, 238, 0.2666666667);
+  border: none;
+  color: #fff;
+  font-family: "FontBanner";
+  font-weight: bold;
   transition: 0.5s;
 }
 .cover .arrows button:hover {
-  background: white;
-  color: black;
+  background-color: #fff;
+  color: #000;
+}
+.cover .time {
+  position: absolute;
+  z-index: 1000;
+  width: 0%;
+  height: 3px;
+  background-color: #f1683a;
+  left: 0;
+  top: 0;
 }
 
 @keyframes showContent {
   to {
+    transform: translateY(0px);
+    filter: blur(0px);
     opacity: 1;
-    filter: blur(0);
-    transform: translateY(0);
-  }
-}
-@keyframes showButton {
-  to {
-    opacity: 1;
-    filter: blur(0);
   }
 }
 @keyframes showImage {
   to {
+    bottom: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    left: 0;
-    bottom: 0;
     border-radius: 0;
-    filter: blur(0);
   }
 }
 @keyframes showThumbnail {
-  to {
-    width: 170px;
+  from {
+    width: 0;
+    opacity: 0;
   }
 }
-@keyframes tranformThumbnail {
-  to {
-    transform: translateX(0);
+@keyframes effectNext {
+  from {
+    transform: translateX(150px);
   }
 }
-@keyframes transformCt {
+@keyframes runningTime {
+  from {
+    width: 100%;
+  }
   to {
-    transform: translateX(0);
+    width: 0;
+  }
+}
+@keyframes outFrame {
+  to {
+    width: 150px;
+    height: 220px;
+    bottom: 50px;
+    left: 50%;
+    border-radius: 20px;
+  }
+}
+@keyframes contentOut {
+  to {
+    transform: translateY(-150px);
+    filter: blur(20px);
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 678px) {
+  .carousel .list .item .content {
+    padding-right: 0;
+  }
+  .carousel .list .item .content .title {
+    font-size: 30px;
   }
 }
 .bestPlace {
