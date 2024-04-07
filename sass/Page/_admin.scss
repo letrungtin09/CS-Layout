@@ -8,7 +8,7 @@
       align-items: center;
       height: 75px;
       img {
-        width: 70%;
+        width: 55%;
       }
     }
     .title-admin {
@@ -53,7 +53,6 @@
               color: $color-green-0;
             }
             span {
-              margin-left: 5px;
               font-weight: 500;
             }
             i {
@@ -146,6 +145,10 @@
         align-items: center;
         justify-content: space-between;
         padding-top: 20px;
+        h2 {
+          font-size: 26px;
+          font-weight: bold;
+        }
         .admin-btnAdd {
           .btn--add {
             padding: 9px 20px;
@@ -164,6 +167,7 @@
       }
       .content-adminBottom {
         margin: 15px 0 40px;
+        width: 1206px;
         overflow-x: auto;
         table,
         th,
@@ -175,17 +179,42 @@
         table {
           width: 100%;
           th {
-            padding: 15px 0;
+            padding: 15px;
             text-transform: uppercase;
-            font-size: 16px;
+            font-size: 14px;
             background-color: $color-green-0;
+            text-wrap: nowrap;
           }
           td {
-            padding: 10px 0;
-            .btns-admin {
+            padding: 10px;
+            // text-wrap: wrap;
+            .img-admin {
+              width: 50px;
+              height: 50px;
+              object-fit: cover;
+            }
+            .btn-action {
               display: flex;
               flex-direction: column;
               align-items: center;
+              .btn--operation {
+                width: 90px;
+                padding: 5px 0;
+                border-radius: 10px;
+                color: $color-white-0;
+              }
+              a {
+                text-decoration: none;
+                background-color: $color-blue-3;
+              }
+              button {
+                border: none;
+                background-color: $color-red-1;
+                margin: 7px 0;
+              }
+              .btn--detail {
+                background-color: $color-gray-2;
+              }
             }
           }
           .btnTd {

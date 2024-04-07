@@ -1,0 +1,59 @@
+.formInsertEdit {
+  padding: 30px 100px;
+  margin-bottom: 30px;
+  min-height: 700px;
+  .formInsertEdit__title {
+    h1 {
+      font-size: 26px;
+      text-align: center;
+      font-weight: bold;
+      color: $color-green-0;
+      margin-bottom: 15px;
+    }
+  }
+  .formInsertEdit__input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 20px;
+    background-color: $color-white-0;
+    border: none;
+    border-bottom: 1px solid $color-green-0;
+    transition: all 0.3s;
+    &:focus {
+      outline: none;
+      background-color: $color-green-3;
+      border-radius: 5px;
+    }
+  }
+  .input-readonly {
+    background-color: $color-white-1;
+    border-radius: 5px;
+    color: $color-black-2;
+    &:focus {
+      background-color: $color-white-1;
+    }
+  }
+  .formInsertEdit__label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .btn-form {
+    display: inline-block;
+    border: 1px solid #666;
+    padding: 7px 30px;
+    margin-right: 15px;
+    text-decoration: none;
+    color: $color-white-0;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: $color-black-5;
+    border: none;
+    transition: all 0.3s;
+    &:hover {
+      background-color: $color-green-0;
+    }
+  }
+  .formInsertEdit__btn {
+    margin-top: 10px;
+  }
+}
