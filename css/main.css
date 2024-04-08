@@ -33,7 +33,7 @@ header {
   position: fixed;
   background-color: white;
   width: 100%;
-  z-index: 100;
+  z-index: 9999;
 }
 header .container-hd {
   width: 90%;
@@ -63,7 +63,6 @@ header .container-hd .col-2 .menu-hd {
   align-items: center;
 }
 header .container-hd .col-2 .menu-hd li {
-  font-family: "FontBanner";
   letter-spacing: 1px;
   list-style: none;
   font-size: 15px;
@@ -252,7 +251,6 @@ footer .footer-copyright .footer-social a i:hover {
   width: 100%;
   overflow: hidden;
   position: relative;
-  font-family: "FontBanner";
 }
 .cover .carousel_cv .list .item {
   width: 100%;
@@ -263,7 +261,7 @@ footer .footer-copyright .footer-social a i:hover {
 .cover .carousel_cv .list .item .overlay-cv {
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.1215686275);
+  background: rgba(34, 34, 34, 0.3);
   position: absolute;
 }
 .cover .carousel_cv .list .item img {
@@ -337,6 +335,7 @@ footer .footer-copyright .footer-social a i:hover {
   animation-delay: 1.4s !important;
 }
 .cover .carousel_cv .list:nth-child(1) .content .des {
+  width: 80%;
   animation-delay: 1.6s !important;
 }
 .cover .carousel_cv .list:nth-child(1) .content .buttons {
@@ -407,7 +406,6 @@ footer .footer-copyright .footer-social a i:hover {
   background-color: rgba(238, 238, 238, 0.2666666667);
   border: none;
   color: #fff;
-  font-family: "FontBanner";
   font-weight: bold;
   transition: 0.5s;
 }
