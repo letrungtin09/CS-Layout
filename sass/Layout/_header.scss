@@ -2,63 +2,99 @@ header{
     position: fixed;
     background-color: $white-color;
     width: 100%;
-    z-index: 100;
+    z-index: 1000;
     .container-hd{
-        width: 90%;
-        margin: 0 5%;
-        display: flex;
-        justify-content: space-between;
+        width: 100%;
+    display: flex;
+    justify-content: space-around;
         // background-color: red;
+        .col{
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            .icon-header{
+                width: 12%;
+            }
+            .btn-height{
+                height: 45%;
+            }
+            .btn-header{
+                border: 1px solid black;
+                border-radius: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 30%;
+                margin-left: 12px;
+                flex-wrap: wrap;
+                cursor: pointer;
+            }
+        }
         .col-1{
-            width: 10%;
-            padding: 15px 0;
+           
+            padding: 25px 0;
+            margin: 0 3%;
             text-align: center;
             .logo-hd{
-                width: 90%;
+                width: 100%;
                 cursor: pointer;
             }
         }
         .col-2{
-            width: 50%;
-            display: flex;
-            align-items: center;
-            .menu-hd{
-                width: 100%;
+            width: 45%;
+            justify-content: center;
+            .input-search-header{
+                background-image: url(/img/icon-search.png);
+                background-repeat: no-repeat;
+                background-size: 22px;
+                background-position: 3%;
+                width: 65%;
+                padding-left: 8%;
+                border-radius: 20px;
+                color: black;
+                border: 1px #B0B0B0 solid;
+                &:focus-visible{
+                    border: none;
+                }
+            }
+            .search-local {
+                border: 1px solid #B0B0B0;
+                border-radius: 40px;
                 display: flex;
-                justify-content: space-around;
-                margin: 0;
+                justify-content: center;
                 align-items: center;
-                li{
-                    font-family: "FontBanner";
-                    letter-spacing: 1px;
-                    list-style: none;
-                    font-size: 15px;
-                    a{
-                        text-transform: uppercase;
-                        color: $black-color;
-                        text-decoration: none;
-                        font-weight: bold;
+                width: 30%;
+                margin-left: 12px;
+                flex-wrap: wrap;
+            
+
+                p{
+                    margin: 0 10px;
+                }
+            }
+            }
+            .col-3{
+                width: 45%;
+                justify-content: center;
+                .register-host{
+                    background: #28cf8c;
+                    color: white;
+                    font-weight: bold;
+                    border:none;
+                    p{
+                        margin: 0;
+                        margin-left: 10px;
                     }
-                    span{
-                        text-transform: uppercase;
-                        color: $black-color;
-                        font-weight: bold;
-                        cursor: pointer;
-                    }
-                    #btn-menu{
-                        width: 85px;
-                        // background-color: white;
-                        border-radius: 90px;
-                        border: 2px solid $black-color;
-                        text-align: center;
-                        img{
-                            width: 20px;
-                            margin: 8px 4px;
-                            cursor: pointer;
-                        }
+                }
+                .dropdown-header{
+                    width: 13%;
+                    border: 1px solid #B0B0B0;
+                    justify-content: space-evenly;
+                    img{
+                        width: 30%;
                     }
                 }
             }
         }
+
     }
-}
