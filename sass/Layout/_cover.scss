@@ -1,287 +1,285 @@
 .cover {
-    .carousel_cv {
-        height: 100vh;
-        // margin-top: -50px;
+  .carousel_cv {
+    height: 100vh;
+    // margin-top: -50px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    .list {
+      .item {
         width: 100%;
-        overflow: hidden;
-        position: relative;
-        font-family: 'FontBanner';
-        .list {
-            .item {
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                inset: 0 0 0 0;
-                .overlay-cv {
-                    width: 100%;
-                    height: 100%;
-                    background: #0000001f;
-                    position: absolute;
-                }
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-
-                .content {
-                    position: absolute;
-                    top: 45%;
-                    width: 1140px;
-                    max-width: 80%;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    padding-right: 30%;
-                    box-sizing: border-box;
-                    color: #fff;
-                    text-shadow: 0 5px 10px #0004;
-
-                    .author {
-                        font-weight: bold;
-                        letter-spacing: 10px;
-                    }
-
-                    .title,
-                    .topic {
-                        font-size: 3rem;
-                        font-weight: bold;
-                        line-height: 1.3em;
-
-                        &.topic {
-                            color: $main-color;
-                            font-size: 1rem;
-                        }
-                    }
-                   
-
-                    .buttons {
-                        display: grid;
-                        grid-template-columns: repeat(2, 130px);
-                        grid-template-rows: 40px;
-                        gap: 5px;
-                        margin-top: 20px;
-
-                        button {
-                            border: none;
-                            background-color: #eee;
-                            letter-spacing: 3px;
-                            font-family: 'FontBanner';
-                            font-weight: 500;
-
-                            &:nth-child(2) {
-                                background-color: transparent;
-                                border: 1px solid #fff;
-                                color: #eee;
-                            }
-                        }
-                    }
-                }
-            }
-
-            &:nth-child(1) {
-                z-index: 1;
-
-                .content {
-                    .author,
-                    .title,
-                    .topic,
-                    .des,
-                    .buttons {
-                        transform: translateY(50px);
-                        filter: blur(20px);
-                        opacity: 0;
-                        animation: showContent .5s 1s linear 1 forwards;
-                    }
-
-                    .title {
-                        animation-delay: 1.2s !important;
-                    }
-
-                    .topic {
-                        animation-delay: 1.4s !important;
-                    }
-
-                    .des {
-                        animation-delay: 1.6s !important;
-                    }
-
-                    .buttons {
-                        animation-delay: 1.8s !important;
-                    }
-                }
-            }
-
-            &:nth-child(2) {
-                z-index: 2;
-
-                img {
-                    z-index: 100;
-                }
-
-                .content {
-                    .author,
-                    .title,
-                    .topic,
-                    .des,
-                    .buttons {
-                        animation: contentOut 1.5s linear 1 forwards !important;
-                    }
-                }
-            }
-        }
-    }
-
-    .thumbnail {
+        height: 100%;
         position: absolute;
-        bottom: 50px;
-        left: 50%;
-        width: max-content;
-        z-index: 100;
-        display: flex;
-        gap: 20px;
-
-        .item {
-            width: 150px;
-            height: 220px;
-            flex-shrink: 0;
-            position: relative;
-
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                border-radius: 20px;
-            }
-
-            .content {
-                color: #fff;
-                position: absolute;
-                bottom: 10px;
-                left: 10px;
-                right: 10px;
-
-                .title {
-                    font-weight: 500;
-                }
-
-                .description {
-                    font-weight: 300;
-                }
-            }
+        inset: 0 0 0 0;
+        .overlay-cv {
+          width: 100%;
+          height: 100%;
+          background: $color-black-3;
+          position: absolute;
         }
-    }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
 
-    .arrows {
-        position: absolute;
-        top: 80%;
-        right: 52%;
-        z-index: 100;
-        width: 300px;
-        max-width: 30%;
-        display: flex;
-        gap: 10px;
-        align-items: center;
+        .content {
+          position: absolute;
+          top: 45%;
+          width: 1140px;
+          max-width: 80%;
+          left: 50%;
+          transform: translateX(-50%);
+          padding-right: 30%;
+          box-sizing: border-box;
+          color: #fff;
+          text-shadow: 0 5px 10px #0004;
 
-        button {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-color: #eee4;
-            border: none;
-            color: #fff;
-            font-family: 'FontBanner';
+          .author {
             font-weight: bold;
-            transition: .5s;
+            letter-spacing: 10px;
+          }
 
-            &:hover {
-                background-color: #fff;
-                color: #000;
+          .title,
+          .topic {
+            font-size: 3rem;
+            font-weight: bold;
+            line-height: 1.3em;
+
+            &.topic {
+              color: $main-color;
+              font-size: 1rem;
             }
-        }
-    }
+          }
 
-    .time {
-        position: absolute;
-        z-index: 1000;
-        width: 0%;
-        height: 3px;
-        background-color: #f1683a;
-        left: 0;
-        top: 0;
+          .buttons {
+            display: grid;
+            grid-template-columns: repeat(2, 130px);
+            grid-template-rows: 40px;
+            gap: 5px;
+            margin-top: 20px;
+
+            button {
+              border: none;
+              background-color: #eee;
+              letter-spacing: 3px;
+              font-family: "FontBanner";
+              font-weight: 500;
+
+              &:nth-child(2) {
+                background-color: transparent;
+                border: 1px solid #fff;
+                color: #eee;
+              }
+            }
+          }
+        }
+      }
+
+      &:nth-child(1) {
+        z-index: 1;
+
+        .content {
+          .author,
+          .title,
+          .topic,
+          .des,
+          .buttons {
+            transform: translateY(50px);
+            filter: blur(20px);
+            opacity: 0;
+            animation: showContent 0.5s 1s linear 1 forwards;
+          }
+
+          .title {
+            animation-delay: 1.2s !important;
+          }
+
+          .topic {
+            animation-delay: 1.4s !important;
+          }
+
+          .des {
+            width: 80%;
+            animation-delay: 1.6s !important;
+          }
+
+          .buttons {
+            animation-delay: 1.8s !important;
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        z-index: 2;
+
+        img {
+          z-index: 100;
+        }
+
+        .content {
+          .author,
+          .title,
+          .topic,
+          .des,
+          .buttons {
+            animation: contentOut 1.5s linear 1 forwards !important;
+          }
+        }
+      }
     }
+  }
+
+  .thumbnail {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: max-content;
+    z-index: 100;
+    display: flex;
+    gap: 20px;
+
+    .item {
+      width: 150px;
+      height: 220px;
+      flex-shrink: 0;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+      }
+
+      .content {
+        color: #fff;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+
+        .title {
+          font-weight: 500;
+        }
+
+        .description {
+          font-weight: 300;
+        }
+      }
+    }
+  }
+
+  .arrows {
+    position: absolute;
+    top: 80%;
+    right: 52%;
+    z-index: 100;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    button {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #eee4;
+      border: none;
+      color: #fff;
+      font-weight: bold;
+      transition: 0.5s;
+
+      &:hover {
+        background-color: #fff;
+        color: #000;
+      }
+    }
+  }
+
+  .time {
+    position: absolute;
+    z-index: 1000;
+    width: 0%;
+    height: 3px;
+    background-color: #f1683a;
+    left: 0;
+    top: 0;
+  }
 }
 
 @keyframes showContent {
-    to {
-        transform: translateY(-0px);
-        filter: blur(0px);
-        opacity: 1;
-    }
+  to {
+    transform: translateY(-0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
 }
 
 @keyframes showImage {
-    to {
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border-radius: 0;
-    }
+  to {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
 }
 
 @keyframes showThumbnail {
-    from {
-        width: 0;
-        opacity: 0;
-    }
+  from {
+    width: 0;
+    opacity: 0;
+  }
 }
 
 @keyframes effectNext {
-    from {
-        transform: translateX(150px);
-    }
+  from {
+    transform: translateX(150px);
+  }
 }
 
 @keyframes runningTime {
-    from {
-        width: 100%;
-    }
+  from {
+    width: 100%;
+  }
 
-    to {
-        width: 0;
-    }
+  to {
+    width: 0;
+  }
 }
 
 @keyframes outFrame {
-    to {
-        width: 150px;
-        height: 220px;
-        bottom: 50px;
-        left: 50%;
-        border-radius: 20px;
-    }
+  to {
+    width: 150px;
+    height: 220px;
+    bottom: 50px;
+    left: 50%;
+    border-radius: 20px;
+  }
 }
 
 @keyframes contentOut {
-    to {
-        transform: translateY(-150px);
-        filter: blur(20px);
-        opacity: 0;
-    }
+  to {
+    transform: translateY(-150px);
+    filter: blur(20px);
+    opacity: 0;
+  }
 }
 
 @media screen and (max-width: 678px) {
-    .carousel {
-        .list {
-            .item {
-                .content {
-                    padding-right: 0;
+  .carousel {
+    .list {
+      .item {
+        .content {
+          padding-right: 0;
 
-                    .title {
-                        font-size: 30px;
-                    }
-                }
-            }
+          .title {
+            font-size: 30px;
+          }
         }
+      }
     }
+  }
 }
