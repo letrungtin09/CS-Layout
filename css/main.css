@@ -20,7 +20,7 @@
   src: url("/fonts/Roboto-Light.ttf");
 }
 body {
-  font-family: "MyFont", sans-serif;
+  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
 
@@ -1371,4 +1371,380 @@ footer .footer-copyright .footer-social a i:hover {
   text-decoration: none;
   color: #3fa97f;
   font-weight: 500;
+}
+
+.detailContent {
+  padding-top: 75px;
+  width: 1120px;
+  margin: 0 auto;
+}
+.detailContent .detailInfo__line {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(221, 221, 221);
+}
+.detailContent .info-title h3 {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+.detailContent .detailImg .detailImg__title h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 24px 0;
+}
+.detailContent .detailImg .detailImg__imgs {
+  height: 350px;
+  display: flex;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.detailContent .detailImg .detailImg__imgs .detailImg__imgs__left {
+  width: 50%;
+  padding-right: 10px;
+}
+.detailContent .detailImg .detailImg__imgs .detailImg__imgs__left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.detailContent .detailImg .detailImg__imgs .detailImg__imgs__right {
+  width: 50%;
+  display: flex;
+  gap: 0 10px;
+}
+.detailContent .detailImg .detailImg__imgs .detailImg__imgs__right .right-1,
+.detailContent .detailImg .detailImg__imgs .detailImg__imgs__right .right-2 {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 0;
+}
+.detailContent .detailImg .detailImg__imgs .detailImg__imgs__right .right-1 img,
+.detailContent .detailImg .detailImg__imgs .detailImg__imgs__right .right-2 img {
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+}
+.detailContent .detailInfo .detailInfo__left .detailInfo__head {
+  padding: 30px 0;
+}
+.detailContent .detailInfo .detailInfo__left .detailInfo__head .detailInfo__title {
+  font-size: 22px;
+  font-weight: 500;
+}
+.detailContent .detailInfo .detailInfo__left .detailInfo__head .detailInfo__quantity span {
+  font-size: 16px;
+  font-weight: 400;
+}
+.detailContent .detailInfo .detailInfo__left .detailInfo__partner {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+.detailContent .detailInfo .detailInfo__left .detailInfo__partner .partner-avatar img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 0.5px solid rgb(221, 221, 221);
+}
+.detailContent .detailInfo .detailInfo__left .detailInfo__partner .partner-info {
+  margin-left: 15px;
+}
+.detailContent .detailInfo .detailInfo__left .detailInfo__partner .partner-info .partner-name {
+  font-weight: 500;
+}
+.detailContent .detailInfo .detailInfo__left .detailInfo__partner .partner-info .partner-intro {
+  font-size: 14px;
+  color: #6a6a6a;
+}
+.detailContent .detailInfo .detailInfo__left .detailInfo__status {
+  padding: 30px 0 10px;
+}
+.detailContent .detailInfo .detailInfo__left .detailInfo__status .detailInfo__statusPlace {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.detailContent .detailInfo .detailInfo__left .detailInfo__status .detailInfo__statusPlace .status-icon {
+  margin-right: 15px;
+  padding-top: 5px;
+}
+.detailContent .detailInfo .detailInfo__left .detailInfo__status .detailInfo__statusPlace .status-icon i {
+  font-size: 24px;
+}
+.detailContent .detailInfo .detailInfo__left .detailInfo__status .detailInfo__statusPlace .status-title {
+  font-weight: 500;
+}
+.detailContent .detailInfo .detailInfo__left .detailInfo__status .detailInfo__statusPlace .status-text {
+  font-size: 14px;
+  color: #6a6a6a;
+}
+.detailContent .detailInfo .detailInfo__left .detailInfo__description {
+  padding: 30px 0;
+}
+.detailContent .detailInfo .detailInfo__left .detailInfo__services {
+  padding: 30px 0;
+}
+.detailContent .detailInfo .detailInfo__left .detailInfo__services .services-detail {
+  display: flex;
+  flex-wrap: wrap;
+}
+.detailContent .detailInfo .detailInfo__left .detailInfo__services .services-detail .services-item {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  padding-bottom: 12px;
+}
+.detailContent .detailInfo .detailInfo__left .detailInfo__services .services-detail .services-item .services-icon {
+  margin-right: 15px;
+}
+.detailContent .detailInfo .detailInfo__left .detailInfo__timeOrder {
+  padding: 30px 0;
+}
+.detailContent .detailInfo .detailInfo__left .detailInfo__timeOrder .timeOrder-date {
+  font-weight: 600;
+}
+.detailContent .detailInfo .detailInfo__left .detailInfo__timeOrder .timeOrder-numberMonth {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+.detailContent .detailInfo .detailInfo__left .detailInfo__timeOrder .timeOrder-numberMonth .number-month {
+  margin: 0 50px;
+}
+.detailContent .detailInfo .detailInfo__left .detailInfo__timeOrder .timeOrder-editDate {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+.detailContent .detailInfo .detailInfo__left .detailInfo__timeOrder .timeOrder-btw {
+  border-bottom: 1px solid rgb(221, 221, 221);
+  border-top: 1px solid rgb(221, 221, 221);
+}
+.detailContent .detailInfo .detailInfo__right .detailInfo__fixed {
+  display: flex;
+  justify-content: flex-end;
+}
+.detailContent .detailInfo .detailInfo__right .detailInfo__fixed .detailInfo__position {
+  padding-top: 30px;
+  width: 370px;
+}
+.detailContent .detailInfo .detailInfo__right .detailInfo__fixed .detailInfo__position .detailInfo__order {
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
+  margin-bottom: 30px;
+}
+.detailContent .detailInfo .detailInfo__right .detailInfo__fixed .detailInfo__position .detailInfo__order .detailInfo__price {
+  margin-bottom: 20px;
+}
+.detailContent .detailInfo .detailInfo__right .detailInfo__fixed .detailInfo__position .detailInfo__order .detailInfo__price .price-place {
+  font-size: 22px;
+  font-weight: 600;
+}
+.detailContent .detailInfo .detailInfo__right .detailInfo__fixed .detailInfo__position .detailInfo__order .detailInfo__time {
+  display: flex;
+}
+.detailContent .detailInfo .detailInfo__right .detailInfo__fixed .detailInfo__position .detailInfo__order .detailInfo__time .detailInfo__date {
+  padding: 10px 12px;
+  width: 50%;
+  border: 1px solid rgb(207, 207, 207);
+}
+.detailContent .detailInfo .detailInfo__right .detailInfo__fixed .detailInfo__position .detailInfo__order .detailInfo__time .detailInfo__date .date-title {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.detailContent .detailInfo .detailInfo__right .detailInfo__fixed .detailInfo__position .detailInfo__order .detailInfo__time .detailInfo__date .date-time {
+  font-size: 14px;
+}
+.detailContent .detailInfo .detailInfo__right .detailInfo__fixed .detailInfo__position .detailInfo__order .detailInfo__time .date-start {
+  border-top-left-radius: 9px;
+}
+.detailContent .detailInfo .detailInfo__right .detailInfo__fixed .detailInfo__position .detailInfo__order .detailInfo__time .date-end {
+  border-top-right-radius: 9px;
+}
+.detailContent .detailInfo .detailInfo__right .detailInfo__fixed .detailInfo__position .detailInfo__order .detailInfo__quantityGuest {
+  margin-bottom: 12px;
+  padding: 10px 12px;
+  border: 1px solid rgb(207, 207, 207);
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+.detailContent .detailInfo .detailInfo__right .detailInfo__fixed .detailInfo__position .detailInfo__order .detailInfo__quantityGuest .guest-title {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.detailContent .detailInfo .detailInfo__right .detailInfo__fixed .detailInfo__position .detailInfo__order .detailInfo__quantityGuest .guest-number {
+  font-size: 14px;
+}
+.detailContent .detailInfo .detailInfo__right .detailInfo__fixed .detailInfo__position .detailInfo__order .detailInfo__btnOrder .btn-order {
+  background-color: #4ccd99;
+  padding: 12px 24px;
+  width: 100%;
+  border: none;
+  border-radius: 9px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s;
+}
+.detailContent .detailInfo .detailInfo__right .detailInfo__fixed .detailInfo__position .detailInfo__order .detailInfo__btnOrder .btn-order:hover {
+  background-color: #3fa97f;
+}
+.detailContent .detailInfo .detailInfo__right .detailInfo__fixed .detailInfo__position .detailInfo__order .detailInfo__feePay {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.detailContent .detailInfo .detailInfo__right .detailInfo__fixed .detailInfo__position .detailInfo__order .detailInfo__total {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.detailContent .detailInfo .detailInfo__right .detailInfo__fixed .detailInfo__position .detailInfo__order .detailInfo__total span {
+  font-weight: 600;
+}
+.detailContent .detailInfo .detailInfo__right .detailInfo__fixed .detailInfo__position .detailInfo__warning {
+  display: flex;
+}
+.detailContent .detailInfo .detailInfo__right .detailInfo__fixed .detailInfo__position .detailInfo__warning .warning-logo {
+  margin-right: 7px;
+}
+.detailContent .detailInfo .detailInfo__right .detailInfo__fixed .detailInfo__position .detailInfo__warning .warning-logo img {
+  width: 24px;
+}
+.detailContent .detailInfo .detailInfo__right .detailInfo__fixed .detailInfo__position .detailInfo__warning .warning-text {
+  font-size: 12px;
+}
+.detailContent .detailComment {
+  padding: 30px 0 10px;
+}
+.detailContent .detailComment .detailComment__allCmt {
+  display: flex;
+  flex-wrap: wrap;
+}
+.detailContent .detailComment .detailComment__allCmt .detailComment__item {
+  width: 50%;
+  padding-right: 90px;
+  margin-bottom: 30px;
+}
+.detailContent .detailComment .detailComment__allCmt .detailComment__item .detailComment__user {
+  display: flex;
+  margin-bottom: 7px;
+}
+.detailContent .detailComment .detailComment__allCmt .detailComment__item .detailComment__user .detailComment__avatar {
+  margin-right: 15px;
+}
+.detailContent .detailComment .detailComment__allCmt .detailComment__item .detailComment__user .detailComment__avatar img {
+  width: 45px;
+  height: 45px;
+  border: 0.5px solid rgb(221, 221, 221);
+  border-radius: 50%;
+}
+.detailContent .detailComment .detailComment__allCmt .detailComment__item .detailComment__user .detailComment__name {
+  font-weight: 500;
+}
+.detailContent .detailMap {
+  padding: 30px 0;
+}
+.detailContent .detailMap .detailMap__address {
+  padding-top: 20px;
+  font-weight: 600;
+}
+.detailContent .detailPartner {
+  padding: 30px 0 50px;
+}
+.detailContent .detailPartner .detailPartner__warning {
+  display: flex;
+}
+.detailContent .detailPartner .detailPartner__warning .warning-logo {
+  margin-right: 7px;
+}
+.detailContent .detailPartner .detailPartner__warning .warning-logo img {
+  width: 24px;
+}
+.detailContent .detailPartner .detailPartner__warning .warning-text {
+  font-size: 12px;
+  padding-right: 20px;
+}
+.detailContent .detailPartner .detailPartner__content {
+  display: flex;
+  background-color: #f0efe9;
+  border-radius: 10px;
+  padding: 40px;
+  gap: 0 60px;
+}
+.detailContent .detailPartner .detailPartner__content .detailPartner__info {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+}
+.detailContent .detailPartner .detailPartner__content .detailPartner__info .detailPartner__personal {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.detailContent .detailPartner .detailPartner__content .detailPartner__info .detailPartner__personal .detailPartner__left {
+  margin-right: 30px;
+}
+.detailContent .detailPartner .detailPartner__content .detailPartner__info .detailPartner__personal .detailPartner__avatar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 7px;
+}
+.detailContent .detailPartner .detailPartner__content .detailPartner__info .detailPartner__personal .detailPartner__avatar img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 0.5px solid rgb(221, 221, 221);
+}
+.detailContent .detailPartner .detailPartner__content .detailPartner__info .detailPartner__personal .detailPartner__name {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 600;
+}
+.detailContent .detailPartner .detailPartner__content .detailPartner__info .detailPartner__personal .detailPartner__right {
+  display: flex;
+  align-items: center;
+}
+.detailContent .detailPartner .detailPartner__content .detailPartner__info .detailPartner__personal .detailPartner__confirm {
+  margin-bottom: 10px;
+}
+.detailContent .detailPartner .detailPartner__content .detailPartner__info .detailPartner__personal .detailPartner__confirm i {
+  margin-right: 10px;
+}
+.detailContent .detailPartner .detailPartner__content .detailPartner__info .detailPartner__personal .detailPartner__confirm span {
+  font-weight: 500;
+}
+.detailContent .detailPartner .detailPartner__content .detailPartner__info .detailPartner__intro .detailPartner__introTitle {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.detailContent .detailPartner .detailPartner__content .detailPartner__rulePlace {
+  width: 50%;
+}
+.detailContent .detailPartner .detailPartner__content .detailPartner__rulePlace .detailPartner__title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.detailContent .detailPartner .detailPartner__content .detailPartner__rulePlace .detailPartner__allRule {
+  margin-bottom: 30px;
+}
+.detailContent .detailPartner .detailPartner__content .detailPartner__rulePlace .detailPartner__allRule .detailPartner__item {
+  display: flex;
+  padding: 10px 0;
+  border-bottom: 1px solid rgb(221, 221, 221);
+}
+.detailContent .detailPartner .detailPartner__content .detailPartner__rulePlace .detailPartner__allRule .detailPartner__item .detailPartner__icon {
+  margin-right: 10px;
 }/*# sourceMappingURL=main.css.map */
