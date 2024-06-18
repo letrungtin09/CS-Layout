@@ -1856,4 +1856,17 @@ footer .footer-copyright .footer-social a i:hover {
   color: white;
   padding: 5px 10px;
   font-weight: 400;
+}
+
+.SearchResults-container {
+  padding-top: 130px;
+}
+.SearchResults-container .title-SearchResults {
+  font-size: 32px;
+}
+.SearchResults-container .sub-title-SearchResults {
+  color: #808080;
+}
+.SearchResults-container .places .places__container {
+  padding: 0;
 }/*# sourceMappingURL=main.css.map */
