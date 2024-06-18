@@ -1,0 +1,73 @@
+.Wallet-container{
+    padding-top: 130px;
+    .title{
+        font-size: 32px;
+        margin: 2% 0;
+    }
+    .content {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5%;
+        .wallet-row {
+            width: 45%;
+            border: 1px solid #000000;
+            padding: 30px;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            .title-info-w-all{
+                font-size: 22px;
+                font-weight: 500;
+            }
+        }
+        .info-wallet{
+            .info-wallet-item {
+                display: flex;
+                justify-content: space-between; 
+                .total-money{
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+                .title-info-wallet{
+                    font-weight: 500;
+                }
+            }
+            .line-bottom{
+                border-bottom: 2px solid black;
+                padding-bottom: 15px;
+            }
+            .btn-recharge {
+                text-decoration: none;
+                background: linear-gradient(to right, #4CCD99, #1BC17E, #00B56C);
+                color: white;
+                font-size: 18px;
+                font-weight: 500;
+                text-align: center;
+                padding: 3%;
+                border-radius: 8px;
+            }
+        }
+        .history-wallet{
+            .history-wallet-item{
+                display: flex;
+                justify-content: space-between;
+                .title-history-wallet{
+                    border-bottom: 2px solid black;
+                    padding-bottom: 15px;
+                }
+            }
+            .title-history-w-item{
+                font-weight: 500;
+                padding-bottom: 15px;
+                border-bottom: 2px solid black;
+            }
+            .history-w-col{
+                background: #14BE79;
+                color: white;
+                padding: 5px 10px;
+                font-weight: 400;
+            }
+        }
+        
+    }
+}

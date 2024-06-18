@@ -3,6 +3,7 @@ header{
     background-color: $white-color;
     width: 100%;
     z-index: 1000;
+    box-shadow: 1px -1px 13px -1px gray;
     .container-hd{
         width: 100%;
     display: flex;
@@ -32,7 +33,7 @@ header{
         }
         .col-1{
            
-            padding: 25px 0;
+            padding: 20px 0;
             margin: 0 3%;
             text-align: center;
             .logo-hd{
@@ -61,12 +62,13 @@ header{
                 border: 1px solid #B0B0B0;
                 border-radius: 40px;
                 display: flex;
-                justify-content: center;
+                justify-content: start;
                 align-items: center;
-                width: 30%;
+                width: 27%;
                 margin-left: 12px;
                 flex-wrap: wrap;
-            
+                font-size: 13px;
+                padding-left: 15px;
 
                 p{
                     margin: 0 10px;
@@ -79,15 +81,20 @@ header{
                 .register-host{
                     background: #28cf8c;
                     color: white;
-                    font-weight: bold;
-                    border:none;
-                    p{
+                    font-weight: 500;
+                    border: none;
+                    font-size: 15px;
+                    justify-content: start;
+                    padding-left: 13px;
+                
+                    p
+                    {
                         margin: 0;
                         margin-left: 10px;
                     }
                 }
                 .dropdown-header{
-                    width: 13%;
+                    width: 10%;
                     border: 1px solid #B0B0B0;
                     justify-content: space-evenly;
                     img{

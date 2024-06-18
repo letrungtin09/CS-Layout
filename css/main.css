@@ -34,6 +34,7 @@ header {
   background-color: white;
   width: 100%;
   z-index: 1000;
+  box-shadow: 1px -1px 13px -1px gray;
 }
 header .container-hd {
   width: 100%;
@@ -63,7 +64,7 @@ header .container-hd .col .btn-header {
   cursor: pointer;
 }
 header .container-hd .col-1 {
-  padding: 25px 0;
+  padding: 20px 0;
   margin: 0 3%;
   text-align: center;
 }
@@ -93,11 +94,13 @@ header .container-hd .col-2 .search-local {
   border: 1px solid #B0B0B0;
   border-radius: 40px;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
-  width: 30%;
+  width: 27%;
   margin-left: 12px;
   flex-wrap: wrap;
+  font-size: 13px;
+  padding-left: 15px;
 }
 header .container-hd .col-2 .search-local p {
   margin: 0 10px;
@@ -109,15 +112,18 @@ header .container-hd .col-3 {
 header .container-hd .col-3 .register-host {
   background: #28cf8c;
   color: white;
-  font-weight: bold;
+  font-weight: 500;
   border: none;
+  font-size: 15px;
+  justify-content: start;
+  padding-left: 13px;
 }
 header .container-hd .col-3 .register-host p {
   margin: 0;
   margin-left: 10px;
 }
 header .container-hd .col-3 .dropdown-header {
-  width: 13%;
+  width: 10%;
   border: 1px solid #B0B0B0;
   justify-content: space-evenly;
 }
@@ -1781,4 +1787,73 @@ footer .footer-copyright .footer-social a i:hover {
 }
 .detailContent .detailPartner .detailPartner__content .detailPartner__rulePlace .detailPartner__allRule .detailPartner__item .detailPartner__icon {
   margin-right: 10px;
+}
+
+.Wallet-container {
+  padding-top: 130px;
+}
+.Wallet-container .title {
+  font-size: 32px;
+  margin: 2% 0;
+}
+.Wallet-container .content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+.Wallet-container .content .wallet-row {
+  width: 45%;
+  border: 1px solid #000000;
+  padding: 30px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.Wallet-container .content .wallet-row .title-info-w-all {
+  font-size: 22px;
+  font-weight: 500;
+}
+.Wallet-container .content .info-wallet .info-wallet-item {
+  display: flex;
+  justify-content: space-between;
+}
+.Wallet-container .content .info-wallet .info-wallet-item .total-money {
+  font-weight: 500;
+  font-size: 18px;
+}
+.Wallet-container .content .info-wallet .info-wallet-item .title-info-wallet {
+  font-weight: 500;
+}
+.Wallet-container .content .info-wallet .line-bottom {
+  border-bottom: 2px solid black;
+  padding-bottom: 15px;
+}
+.Wallet-container .content .info-wallet .btn-recharge {
+  text-decoration: none;
+  background: linear-gradient(to right, #4CCD99, #1BC17E, #00B56C);
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  padding: 3%;
+  border-radius: 8px;
+}
+.Wallet-container .content .history-wallet .history-wallet-item {
+  display: flex;
+  justify-content: space-between;
+}
+.Wallet-container .content .history-wallet .history-wallet-item .title-history-wallet {
+  border-bottom: 2px solid black;
+  padding-bottom: 15px;
+}
+.Wallet-container .content .history-wallet .title-history-w-item {
+  font-weight: 500;
+  padding-bottom: 15px;
+  border-bottom: 2px solid black;
+}
+.Wallet-container .content .history-wallet .history-w-col {
+  background: #14BE79;
+  color: white;
+  padding: 5px 10px;
+  font-weight: 400;
 }/*# sourceMappingURL=main.css.map */
