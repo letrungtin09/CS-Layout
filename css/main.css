@@ -1869,4 +1869,113 @@ footer .footer-copyright .footer-social a i:hover {
 }
 .SearchResults-container .places .places__container {
   padding: 0;
+}
+
+.checkout-container {
+  padding-top: 130px;
+}
+.checkout-container .title {
+  font-size: 32px;
+  margin: 2% 0;
+}
+.checkout-container .checkout-row {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5%;
+}
+.checkout-container .checkout-row .checkout-all {
+  width: 45%;
+}
+.checkout-container .checkout-row .checkout-r-l {
+  width: 60% !important;
+  margin-right: 5%;
+}
+.checkout-container .checkout-row .checkout-r-l .info-checkout {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  border: 1px solid gray;
+  border-radius: 16px;
+  margin-bottom: 10%;
+}
+.checkout-container .checkout-row .checkout-r-l .info-checkout h1 {
+  font-size: 22px;
+}
+.checkout-container .checkout-row .checkout-r-l .info-checkout .info-checkout-table {
+  display: flex;
+  justify-content: space-between;
+}
+.checkout-container .checkout-row .checkout-r-l .info-checkout .info-checkout-table p {
+  font-weight: 500;
+}
+.checkout-container .checkout-row .checkout-r-l .info-checkout .info-checkout-table p span {
+  font-weight: 400;
+}
+.checkout-container .checkout-row .checkout-r-l .info-checkout .info-checkout-table .info-checkout-table-l {
+  width: 50%;
+  border-right: 1px solid gray;
+}
+.checkout-container .checkout-row .checkout-r-r .bill-checkout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 16px;
+  padding: 5%;
+}
+.checkout-container .checkout-row .checkout-r-r .bill-checkout .info-room {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  padding-bottom: 5%;
+  border-bottom: 1px solid gray;
+}
+.checkout-container .checkout-row .checkout-r-r .bill-checkout .info-room .img-room {
+  width: 104px;
+  height: 98px;
+  border-radius: 12px;
+  background-image: url(/CS-Layout/img/img-places-1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 20px;
+}
+.checkout-container .checkout-row .checkout-r-r .bill-checkout .info-room .title-room p {
+  margin-bottom: 1%;
+}
+.checkout-container .checkout-row .checkout-r-r .bill-checkout .info-room .title-room .name-room {
+  font-weight: bold;
+}
+.checkout-container .checkout-row .checkout-r-r .bill-checkout .footer-body-bill {
+  padding-bottom: 4%;
+  border-bottom: 1px solid gray;
+}
+.checkout-container .checkout-row .checkout-r-r .bill-checkout .footer-body-bill h1 {
+  font-size: 32px;
+}
+.checkout-container .checkout-row .checkout-r-r .bill-checkout .footer-body-bill .body-bill-item {
+  display: flex;
+  justify-content: space-between;
+}
+.checkout-container .checkout-row .checkout-r-r .bill-checkout .footer-body-bill .body-bill-item .title-body-bill {
+  font-weight: 500;
+}
+.checkout-container .checkout-row .checkout-r-r .bill-checkout .footer-bill {
+  border: none;
+  padding-top: 4%;
+  padding-bottom: 0;
+  font-weight: bold;
+}
+.checkout-container .checkout-row .checkout-r-r .bill-checkout .footer-bill .body-bill-item {
+  margin: 0;
+}
+.checkout-container .checkout-row .checkout-r-r .bill-checkout .btn-recharge {
+  margin-top: 5%;
+  text-decoration: none;
+  background: linear-gradient(to right, #4CCD99, #1BC17E, #00B56C);
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  padding: 3%;
+  border-radius: 8px;
 }/*# sourceMappingURL=main.css.map */

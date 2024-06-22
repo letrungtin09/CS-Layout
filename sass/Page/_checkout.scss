@@ -1,0 +1,112 @@
+.checkout-container{
+    padding-top: 130px;
+    .title{
+        font-size: 32px;
+        margin: 2% 0;
+    }
+    .checkout-row {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 5%;
+        .checkout-all{
+            width: 45%;
+        }
+        .checkout-r-l {
+            width: 60% !important;
+            margin-right: 5%;
+            .info-checkout{
+                display: flex;
+                flex-direction: column;
+                padding: 5%;
+                border: 1px solid gray;
+                border-radius: 16px;
+                margin-bottom: 10%;
+                h1{
+                    font-size: 22px;
+                }
+                .info-checkout-table{
+                    display: flex;
+                    justify-content: space-between;
+                    p{
+                        font-weight: 500;
+                        span{
+                            font-weight: 400;
+                        }
+                    }
+                    .info-checkout-table-l {
+                        width: 50%;
+                        border-right: 1px solid gray;
+                    }
+                }
+            }
+        }
+        .checkout-r-r{
+            .bill-checkout{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                border: 1px solid gray;
+                border-radius: 16px;
+                padding: 5%;
+                .info-room{
+                    width: 100%;
+                    display: flex;
+                    justify-content: start;
+                    padding-bottom: 5%;
+                    border-bottom: 1px solid gray;
+                    .img-room{
+                        width: 104px;
+                        height: 98px;
+                        border-radius: 12px;
+                        background-image: url(/CS-Layout/img/img-places-1.webp);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        margin-right: 20px;
+                    }
+                    .title-room{
+                        p{
+                            margin-bottom: 1%;
+                        }
+                        .name-room{
+                            font-weight: bold;
+                        }
+                    }
+                }
+                .footer-body-bill{
+                    padding-bottom: 4%;
+                    border-bottom: 1px solid gray;
+                    h1{
+                        font-size: 32px;
+                    }
+                    .body-bill-item {
+                        display: flex;
+                        justify-content: space-between;
+                        .title-body-bill{
+                            font-weight: 500;
+                        }
+                    }
+                }
+                .footer-bill{
+                    border: none;
+                    padding-top: 4%;
+                    padding-bottom: 0;
+                    font-weight: bold;
+                    .body-bill-item{
+                        margin: 0;
+                    }
+                }
+            .btn-recharge {
+                    margin-top: 5%;
+                    text-decoration: none;
+                    background: linear-gradient(to right, #4CCD99, #1BC17E, #00B56C);
+                    color: white;
+                    font-size: 18px;
+                    font-weight: 500;
+                    text-align: center;
+                    padding: 3%;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+}
