@@ -4,16 +4,6 @@ let next = document.getElementById("next");
 let prev = document.getElementById("prev");
 
 let active = 0;
-// let lengthItems = items.length - 1;
-
-// next.onclick = function () {
-//   if (active + 1 > lengthItems) {
-//     active = 0;
-//   } else {
-//     active += 1;
-//   }
-//   reloadSlider(className);
-// };
 
 function nextImg(className) {
   let items = document.querySelectorAll(
@@ -40,15 +30,6 @@ function prevImg(className) {
   }
   reloadSlider(className);
 }
-
-// prev.onclick = function () {
-//   if (active - 1 < 0) {
-//     active = lengthItems;
-//   } else {
-//     active -= 1;
-//   }
-//   reloadSlider();
-// };
 
 function reloadSlider(className) {
   let items = document.querySelectorAll(
