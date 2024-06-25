@@ -1942,6 +1942,127 @@ footer .footer-copyright .footer-social a i:hover {
   padding: 0;
 }
 
+.updateAccount__container {
+  padding-top: 130px;
+  padding-bottom: 70px;
+  width: 1120px;
+  margin: 0 auto;
+}
+.updateAccount__container .updateAccount__title {
+  margin-bottom: 30px;
+}
+.updateAccount__container .updateAccount__title h3 {
+  text-align: center;
+}
+.updateAccount__container .updateAccount__content {
+  display: flex;
+  justify-content: center;
+  gap: 0 50px;
+}
+.updateAccount__container .updateAccount__content .updateAccount__avatar {
+  overflow: hidden;
+  border-radius: 9px;
+}
+.updateAccount__container .updateAccount__content .updateAccount__avatar img {
+  width: 320px;
+  height: 100%;
+  border-radius: 9px;
+  transition: all 0.5s;
+}
+.updateAccount__container .updateAccount__content .updateAccount__avatar img:hover {
+  transform: scale(1.1);
+}
+.updateAccount__container .updateAccount__content .updateAccount__form {
+  display: flex;
+  margin-bottom: 25px;
+}
+.updateAccount__container .updateAccount__content .updateAccount__form .input-title {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.updateAccount__container .updateAccount__content .updateAccount__form input {
+  margin-bottom: 10px;
+  padding: 7px;
+  border-radius: 5px;
+  border: 1.5px solid #999;
+  width: 300px;
+}
+.updateAccount__container .updateAccount__content .updateAccount__form input:focus {
+  outline: none;
+  border: 1.5px solid #4ccd99;
+}
+.updateAccount__container .updateAccount__content .updateAccount__form textarea {
+  padding: 7px;
+  border-radius: 5px;
+  border: 1.5px solid #999;
+  width: 300px;
+  height: 193px;
+}
+.updateAccount__container .updateAccount__content .updateAccount__form textarea:focus {
+  outline: none;
+  border: 1.5px solid #4ccd99;
+}
+.updateAccount__container .updateAccount__content .updateAccount__form .updateAccount__left {
+  margin-right: 30px;
+}
+.updateAccount__container .updateAccount__content button {
+  padding: 9px 0;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  background-color: #4ccd99;
+  color: white;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+.updateAccount__container .updateAccount__content button:hover {
+  background-color: #3fa97f;
+}
+
+.changePassword__container {
+  padding-top: 130px;
+  padding-bottom: 70px;
+  width: 1120px;
+  margin: 0 auto;
+}
+.changePassword__container .changePassword__title {
+  margin-bottom: 30px;
+}
+.changePassword__container .changePassword__title h3 {
+  text-align: center;
+}
+.changePassword__container .changePassword__content {
+  display: flex;
+  justify-content: center;
+}
+.changePassword__container .changePassword__content .changePassword__form .input-title {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.changePassword__container .changePassword__content .changePassword__form input {
+  margin-bottom: 13px;
+  padding: 7px;
+  border-radius: 5px;
+  border: 1.5px solid #999;
+  width: 300px;
+}
+.changePassword__container .changePassword__content .changePassword__form input:focus {
+  outline: none;
+  border: 1.5px solid #4ccd99;
+}
+.changePassword__container .changePassword__content button {
+  margin-top: 10px;
+  padding: 9px 0;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  background-color: #4ccd99;
+  color: white;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+.changePassword__container .changePassword__content button:hover {
+  background-color: #3fa97f;
 .checkout-container {
   padding-top: 130px;
 }
