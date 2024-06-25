@@ -29,41 +29,53 @@
     <!-- HEADER -->
     <header>
       <div class="container-hd">
-        <div class="col col-1">
-          <img class="logo-hd" src="./img/CozyStay.png" alt="" />
-        </div>
-        <div class="col col-2">
-          <input
-            type="search"
-            name=""
-            class="input-search-header btn-height"
-            placeholder="Tìm nhà ở..."
-          />
-          <div class="search-local btn-height btn-header">
-            <img src="/img/icon-local.png" alt="" class="icon-header" />
-            <p>Địa điểm gần bạn</p>
+          <div class="col col-1">
+              <img class="logo-hd" src="/CS-Layout/img/CozyStay.png" alt="" />
           </div>
-        </div>
-        <div class="col col-3">
-          <div class="register-host btn-height btn-header">
-            <img src="/img/icon-home.png" alt="" class="icon-header" />
-            <p>Trở thành chủ nhà</p>
+          <div class="col col-2">
+              <input type="search" name="" class="input-search-header btn-height" placeholder="Tìm nhà ở...">
+              <div class="search-local btn-height btn-header">
+                  <img src="/CS-Layout/img/icon-local.png" alt="" class="icon-header">
+                  <p>Địa điểm gần bạn</p>
+              </div>
           </div>
-          <div class="dropdown-header btn-height btn-header">
-            <img
-              src="/img/icon-user.png"
-              alt=""
-              class="account-icon icon-header"
-            />
-            <img
-              src="/img/icon-menu.png"
-              alt=""
-              class="account-menu icon-header"
-            />
+          <div class="col col-3">
+              <div class="register-host btn-height btn-header">
+                  <img src="/CS-Layout/img/icon-home.png" alt="" class="icon-header">
+                  <p>Trở thành chủ nhà</p>
+              </div>
+              <div class="dropdown-header btn-height">
+                  
+                  <div class="dropdown">
+                      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="/CS-Layout/img/icon-user.png" alt="" class="account-icon icon-header">
+                          <img src="/CS-Layout/img/icon-menu.png" alt="" class="account-menu icon-header">
+                      </a>
+                    
+                      <ul class="dropdown-menu menu-dropdown">
+                          <li><b><a href="#">Ví tiền của bạn</a></b></li>
+                          <li><a href="#">Cập nhật tài khoản</a> </li>
+                          <li><a href="#">Đổi mật khẩu</a></li>
+                          <li><a href="#">Phòng / nhà của bạn</a></li>
+                          <li><a href="#">Chuyển sang chế độ cho thuê</a></li>
+                          <li><a href="#">Đăng xuất</a></li>
+                      </ul>
+                    </div>
+              </div>
+
+              <!-- <div class="dropdown-header-hidden">
+                 <ul class="menu-dropdown">
+                  <li><b><a href="#">Ví tiền của bạn</a></b></li>
+                  <li><a href="#">Cập nhật tài khoản</a> </li>
+                  <li><a href="#">Đổi mật khẩu</a></li>
+                  <li><a href="#">Phòng / nhà của bạn</a></li>
+                  <li><a href="#">Chuyển sang chế độ cho thuê</a></li>
+                  <li><a href="#">Đăng xuất</a></li>
+                 </ul>
+              </div> -->
           </div>
-        </div>
       </div>
-    </header>
+  </header>
     <section class="Wallet-container section-padding">
       <h1 class="title">Ví số dư của bạn</h1>
       <div class="content">
@@ -86,40 +98,99 @@
           </p>
           <p class="info-wallet-item line-bottom">
             <span class="title-info-wallet">Số dư ví:</span>
-            <span class="total-money">1.650.000đ</span> 
+            <span class="total-money">1.650.000đ</span>
           </p>
-          <a href="#" class="btn-recharge">Nạp tiền +</a>
+          <button
+            type="button"
+            class="btn btn-primary btn-recharge"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Nạp thêm +
+          </button>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <!-- <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Nạp tiền vào ví
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div> -->
+                <div class="modal-body">
+                  <form action="">
+                    <p class="title-naptien">Nhập số tiền</p>
+                    <input type="number" placeholder="Nhập số tiền...">
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary thoat"
+                    data-bs-dismiss="modal"
+                  >
+                    Thoát
+                  </button>
+                  <button type="button" class="btn btn-primary xacnhan">
+                    Xác nhận nạp
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <a href="#" class="btn-recharge">Nạp tiền +</a> -->
         </div>
         <div class="history-wallet wallet-row">
-            <p class="history-wallet-item">
-                <span class="title-history-wallet title-info-w-all">Lịch sử giao dịch</span>
-            </p>
-            <p class="history-wallet-item title-history-w-item">
-                <span class="title-history-w">GIAO DỊCH</span>
-                <span class="title-history-w">LOẠI GIAO DỊCH</span> 
-                <span class="title-history-w">SỐ TIỀN (vnđ)</span> 
-            </p>
-            <p class="history-wallet-item history-w-col">
-                <span class="id-history-w">#0004</span>
-                <span class="tengiaodich-history-w">Nạp tiền</span> 
-                <span class="sotiengiaodich-history-w">+100.000</span> 
-            </p>
-            <p class="history-wallet-item history-w-col">
-                <span class="id-history-w">#0003</span>
-                <span class="tengiaodich-history-w">Nạp tiền</span> 
-                <span class="sotiengiaodich-history-w">+1.000.000</span> 
-            </p>
-            <p class="history-wallet-item history-w-col">
-                <span class="id-history-w">#0002</span>
-                <span class="tengiaodich-history-w">Thanh toán phòng</span> 
-                <span class="sotiengiaodich-history-w">-1.850.000</span> 
-            </p>
-            <p class="history-wallet-item history-w-col">
-                <span class="id-history-w">#0001</span>
-                <span class="tengiaodich-history-w">Nạp tiền</span> 
-                <span class="sotiengiaodich-history-w">+2.500.000</span> 
-            </p>
+          <p class="history-wallet-item">
+            <span class="title-history-wallet title-info-w-all"
+              >Lịch sử giao dịch</span
+            >
+          </p>
+          <p class="history-wallet-item title-history-w-item">
+            <span class="title-history-w">GIAO DỊCH</span>
+            <span class="title-history-w">LOẠI GIAO DỊCH</span>
+            <span class="title-history-w">SỐ TIỀN (vnđ)</span>
+          </p>
+          <p class="history-wallet-item history-w-col">
+            <span class="id-history-w">#0004</span>
+            <span class="tengiaodich-history-w">Nạp tiền</span>
+            <span class="sotiengiaodich-history-w">+100.000</span>
+          </p>
+          <p class="history-wallet-item history-w-col">
+            <span class="id-history-w">#0003</span>
+            <span class="tengiaodich-history-w">Nạp tiền</span>
+            <span class="sotiengiaodich-history-w">+1.000.000</span>
+          </p>
+          <p class="history-wallet-item history-w-col">
+            <span class="id-history-w">#0002</span>
+            <span class="tengiaodich-history-w">Thanh toán phòng</span>
+            <span class="sotiengiaodich-history-w">-1.850.000</span>
+          </p>
+          <p class="history-wallet-item history-w-col">
+            <span class="id-history-w">#0001</span>
+            <span class="tengiaodich-history-w">Nạp tiền</span>
+            <span class="sotiengiaodich-history-w">+2.500.000</span>
+          </p>
         </div>
+        <!-- <div class="popup-nap-tien">
+          <form action="">
+            <p class="title-naptien">Nhập số tiền</p>
+            <input type="number" placeholder="Nhập số tiền...">
+            <button type="submit">Nạp ngay</button>
+          </form>
+        </div> -->
       </div>
     </section>
     <!-- FOOTER -->
@@ -276,6 +347,6 @@
     <script src="/js/sliderCover.js"></script>
     <script src="/js/sliderFilter.js"></script>
     <script src="/js/sliderPlace.js"></script>
-    <script src="/js/main.js"></script>
+    <script src="/CS-Layout/js/main.js"></script>
   </body>
 </html>
