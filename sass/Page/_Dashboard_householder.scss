@@ -1,0 +1,122 @@
+.header-houserholder{
+    .container-hd{
+        .col-2{
+            .menu-holder {
+                width: 100%;
+                text-align: center;
+                display: flex;
+                justify-content: space-around;
+                margin: 0;
+                li{
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+        }
+        .col-3{
+            width: 15%;
+            .dropdown-header{
+                width: 30%;
+                .dropdown{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+.houserholder-container{
+    padding-top: 130px;
+    .content{
+        display: flex;
+        flex-direction: column;
+        .col-1{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+            .title{
+                font-size: 32px;
+            }
+            .btn-dk{
+                background: #4CCD99;
+                color: white;
+                text-decoration: none;
+                padding: 10px 32px;
+                border-radius: 10px;
+                font-weight: bold;
+            }
+        }
+        .col-2{
+            margin-top: 40px;
+            width: 100%;
+            .table-list-house{
+                vertical-align: middle;
+                thead{
+                    tr{
+                        th{
+                            background-color: #4CCD99;
+                            color: white;
+                        }
+                    }
+                }
+                tbody{
+                    tr{
+                        td{
+                            min-height: 100px;
+                        }
+                        .img-place-holder{
+                            width: 10%;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        td:nth-child(3){
+                            font-weight: bold;
+                            a{
+                                color: black;
+                                text-decoration: none;
+                                
+                            }
+                            a:hover{
+                                color: $main-color !important;
+                            }
+                        }
+                        td:nth-child(4){
+                            display: flex;
+                            align-items: center;
+                            
+                            .con-trong{
+                                width: 10px;
+                                height: 10px;
+                                background-color: #06AE6A;
+                                border-radius: 180%;
+                                margin: 0;
+                                margin-right: 10px;
+                            }
+                            .yeu-cau-thuc-hien{
+                                width: 10px;
+                                height: 10px;
+                                background-color: #FFA726;
+                                border-radius: 180%;
+                                margin: 0;
+                                margin-right: 10px;
+                            }
+                            .dang-thuc-hien{
+                                width: 10px;
+                                height: 10px;
+                                background-color: #E12D2D;
+                                border-radius: 180%;
+                                margin: 0;
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
